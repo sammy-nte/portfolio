@@ -118,6 +118,14 @@ a{
     margin: 30px 0 50px 0;
 }
 
+#real-world__project1{
+    background: url("../images/young-geeks.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(212, 212, 212) !important;
+}
+
 #upper-section{
     width: inherit;
     height: fit-content;
@@ -171,8 +179,53 @@ a{
     }
 }
 
+#container1,
+#container2,
+#container3,
+#container4,
+#container5,
+#container6{
+    background-color: rgb(212, 212, 212) !important;
+}
+
+
 #container1{
-    background: url("../images/picture.jpg");
+    background: url("../images/blog-template.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#container2{
+    background: url("../images/electrical-template-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#container3{
+    background: url("../images/work.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#container4{
+    background: url("../images/view.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#container5{
+    background: url("../images/service-company-landingpage-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#container6{
+    background: url("../images/wildlife.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
