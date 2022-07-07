@@ -157,7 +157,6 @@
 }
 
 @media screen and (min-width:880px) and (max-width: 1200px) {
-
     header nav{
         right: 50px;
     }
@@ -237,7 +236,7 @@
     }
 
     footer{
-        display: none;
+        display: none !important;
     }
 }
 
