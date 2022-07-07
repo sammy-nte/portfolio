@@ -194,12 +194,14 @@ footer p{
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
+        font-size: 1em !important;
     }
 
     .navigation a{
         text-decoration: none;
         color: white;
         font-weight: 600;
+        font-size: 1em !important;
     }
 
     .navigation li{

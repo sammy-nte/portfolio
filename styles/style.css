@@ -235,7 +235,7 @@
         font-size: 1em;
     }
 
-    footer{
+    #footer{
         display: none !important;
     }
 }
