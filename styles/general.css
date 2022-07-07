@@ -98,7 +98,7 @@ footer p{
 
 .socials{
     height: 50px;
-    width: 200px;
+    width: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -107,6 +107,7 @@ footer p{
 .socials i{
     font-size: 2em;
     color: white;
+    margin: 0 10px 0 0;
 }
 
 .socials i:hover{
@@ -309,5 +310,13 @@ footer p{
             -o-transform: none;
             opacity: 1;
         }
+    }
+
+    .socials i{
+        font-size: 1.3em;
+    }
+
+    footer p{
+        font-size: 1em;
     }
 }
