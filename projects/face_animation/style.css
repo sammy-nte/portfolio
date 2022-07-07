@@ -1,0 +1,796 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#faces{
+    width: 100%;
+    height: 585px;
+    background: teal;
+    display: flex;
+    justify-content: space-around;
+}
+
+.smily-face,
+.sad-face,
+.suprised-face{
+    position: absolute;
+}
+
+/*Smily Face*/
+.face{
+    width: 700px;
+    height: 80vh;
+    background: yellow;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.eye-holder{
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.eyes{
+    width: 200px;
+    height: 200px;
+    border-radius: 120px 120px 0 0;
+    -webkit-border-radius: 120px 120px 0 0;
+    -moz-border-radius: 120px 120px 0 0;
+    -ms-border-radius: 120px 120px 0 0;
+    -o-border-radius: 120px 120px 0 0;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*animation: eyeMovement 1s linear;
+    -webkit-animation: eyeMovement 5s linear;
+    */
+}
+
+.pupil{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: black;
+    animation: pupilMovement 5s linear infinite;
+    -webkit-animation: pupilMovement 5s linear infinite;
+}
+
+.light{
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.eye-lash{
+    display: flex;
+    width: 100px;
+    justify-content: space-evenly;
+    background: beige;
+    height: max-content;
+}
+
+.strands{
+    width: 10px;
+    height: 50px;
+    background: black;
+}
+
+#strand1{
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+}
+
+#strand3{
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+
+.mouth{
+    width: 300px;
+    height: 200px;
+    background: white;
+    position: absolute;
+    bottom: 30px;
+    border-radius: 0 0 120px 120px;
+    -webkit-border-radius: 0 0 120px 120px;
+    -moz-border-radius: 0 0 120px 120px;
+    -ms-border-radius: 0 0 120px 120px;
+    -o-border-radius: 0 0 120px 120px;
+    animation: mouthMovement 150ms linear 5s;
+    -webkit-animation: mouthMovement 150ms linear 5s;
+}
+
+.mouth-hr{
+    position: relative;
+    top: 50%;
+}
+
+@keyframes eyeMovement {
+    0%{
+        transform: translateX(-30px);
+        -webkit-transform: translateX(-30px);
+        -moz-transform: translateX(-30px);
+        -ms-transform: translateX(-30px);
+        -o-transform: translateX(-30px);
+    }
+
+    30%{
+        transform: translateX(30px);
+        -webkit-transform: translateX(30px);
+        -moz-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+        -o-transform: translateX(30px);
+    }
+
+    60%{
+        transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -o-transform: translateY(-30px);
+    }
+
+    90%{
+        transform: translateY(30px);
+        -webkit-transform: translateY(30px);
+        -moz-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+        -o-transform: translateY(30px);
+    }
+}
+
+@keyframes pupilMovement {
+    0%{
+        transform: translateX(-30px);
+        -webkit-transform: translateX(-30px);
+        -moz-transform: translateX(-30px);
+        -ms-transform: translateX(-30px);
+        -o-transform: translateX(-30px);
+    }
+
+    30%{
+        transform: translateX(30px);
+        -webkit-transform: translateX(30px);
+        -moz-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+        -o-transform: translateX(30px);
+    }
+
+    60%{
+        transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -o-transform: translateY(-30px);
+    }
+
+    90%{
+        transform: translateY(30px);
+        -webkit-transform: translateY(30px);
+        -moz-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+        -o-transform: translateY(30px);
+    }
+}
+
+@keyframes mouthMovement {
+    0%{
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+    }
+
+    50%{
+        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -o-transform: translateY(10px);
+    }
+
+    100%{
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+    }
+}
+
+/*Sad Face*/
+.sad-pupil{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: black;
+    animation: pupilMovement 350ms linear infinite;
+    -webkit-animation: sadPupilMovement 350ms linear infinite;
+}
+
+.sad-light{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.eye-lash{
+    display: flex;
+    width: 100px;
+    justify-content: space-evenly;
+    background: beige;
+    height: max-content;
+}
+
+.sad-mouth{
+    width: 400px;
+    height: 220px;
+    background: white;
+    position: absolute;
+    bottom: 20px;
+    border-radius: 200px 200px 10px 10px;
+    -webkit-border-radius: 200px 200px 10px 10px;
+    -moz-border-radius: 200px 200px 10px 10px;
+    -ms-border-radius: 200px 200px 10px 10px;
+    -o-border-radius: 200px 200px 10px 10px;
+}
+
+.tear{
+    height: 50px;
+    width: 20px;
+    background: teal;
+    border-radius: 100px 100px 190px 190px;
+    -webkit-border-radius: 100px 100px 190px 190px;
+    -moz-border-radius: 100px 100px 190px 190px;
+    -ms-border-radius: 100px 100px 190px 190px;
+    -o-border-radius: 100px 100px 190px 190px;
+    position: absolute;
+    bottom: -50px;
+    animation: tearMovement 2s linear infinite;
+    -webkit-animation: tearMovement 2s linear infinite;
+}
+
+@keyframes sadPupilMovement {
+    0%{
+        transform: translateX(-2px);
+        -webkit-transform: translateX(-2px);
+        -moz-transform: translateX(-2px);
+        -ms-transform: translateX(-2px);
+        -o-transform: translateX(-2px);
+    }
+
+    30%{
+        transform: translateX(2px);
+        -webkit-transform: translateX(2px);
+        -moz-transform: translateX(2px);
+        -ms-transform: translateX(2px);
+        -o-transform: translateX(2px);
+    }
+
+    60%{
+        transform: translateX(-2px);
+        -webkit-transform: translateX(-2px);
+        -moz-transform: translateX(-2px);
+        -ms-transform: translateX(-2px);
+        -o-transform: translateX(-2px);
+    }  
+
+    90%{
+        transform: translateX(2px);
+        -webkit-transform: translateX(2px);
+        -moz-transform: translateX(2px);
+        -ms-transform: translateX(2px);
+        -o-transform: translateX(2px);
+    }
+}
+
+@keyframes tearMovement {
+    from{
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(50px);
+        -webkit-transform: translateY(50px);
+        -moz-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+        -o-transform: translateY(50px);
+    }
+}
+
+/*Suprised Face*/
+#suprised-face{
+    position: relative;
+}
+
+.suprised-eyes{
+    width: 200px;
+    height: 200px;
+    border-radius: 90px 90px 0 0;
+    -webkit-border-radius: 90px 90px 0 0;
+    -moz-border-radius: 90px 90px 0 0;
+    -ms-border-radius: 90px 90px 0 0;
+    -o-border-radius: 90px 90px 0 0;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.suprised-mouth{
+    width: 200px;
+    height: 200px;
+    background: white;
+    position: absolute;
+    bottom: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: suprisedMouthMovement 1s linear;
+    -webkit-animation: suprisedMouthMovement 1s linear;
+}
+
+.suprised-pupil{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: black;
+    animation: suprisedPupilMovement 3s linear infinite;
+    -webkit-animation: suprisedPupilMovement 3s linear infinite;
+}
+
+.suprised-pupil-light{
+    width: 10px;
+    height: 10px;
+    background: white;
+    position: relative;
+    bottom: 8px;
+    box-shadow: 20px 20px 20px 20px white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: suprisedPupilLightMovement 3s linear infinite;
+    -webkit-animation: suprisedPupilLightMovement 3s linear infinite;
+}
+
+@keyframes suprisedPupilMovement {
+    0%{
+        transform: translateX(-30px);
+        -webkit-transform: translateX(-30px);
+        -moz-transform: translateX(-30px);
+        -ms-transform: translateX(-30px);
+        -o-transform: translateX(-30px);
+    }
+
+    30%{
+        transform: translateX(30px);
+        -webkit-transform: translateX(30px);
+        -moz-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+        -o-transform: translateX(30px);
+    }
+
+    60%{
+        transform: translateX(30px);
+        -webkit-transform: translateX(30px);
+        -moz-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+        -o-transform: translateX(30px);
+    }
+}
+
+@keyframes suprisedMouthMovement {
+    0%{
+        width: 100px;
+        height: 100px;
+    }
+
+    50%{
+        width: 150px;
+        height: 150px;
+    }
+
+    100%{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes suprisedPupilLightMovement {
+    0%{
+        transform: translateX(-10px);
+        -webkit-transform: translateX(-10px);
+        -moz-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        -o-transform: translateX(-10px);
+    }
+
+    30%{
+        transform: translateX(30px);
+        -webkit-transform: translateX(30px);
+        -moz-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+        -o-transform: translateX(30px);
+    }
+
+    60%{
+        transform: translateX(30px);
+        -webkit-transform: translateX(30px);
+        -moz-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+        -o-transform: translateX(30px);
+    }
+}
+
+.selection-zone{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+}
+
+.change-zone{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+.background-changer,
+.face-color-changer{
+    width: 130px;
+    height: 140px;
+    background: beige;
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.color{
+    width: inherit;
+    height: 30px;
+}
+
+#color1{
+    background: red;
+}
+
+#color2{
+    background: rgba(50, 126, 116, 0.829);
+}
+
+#color3{
+    background: rgb(151, 161, 60);
+}
+
+#face-color1{
+    background: rgb(206, 31, 69);
+}
+
+#face-color2{
+    background: rgb(42, 156, 61);
+}
+
+#face-color3{
+    background: rgb(107, 106, 42);
+}
+
+@media screen and (max-width: 880px) {
+    .face{
+        width: 60%;
+        height: inherit;
+    }
+
+    .suprised-face,
+    .sad-face,
+    .smily-face{
+        width: 100%;
+        height: inherit;
+    }
+
+    .eyes{
+        width: 230px;
+        height: 130px;
+    }
+
+    .selection-zone{
+        height: fit-content;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #smiley-img,
+    #suprised-img,
+    #sad-img{
+        width: 60px;
+        height: 60px;
+        margin-top: 20px;
+    }
+
+    #faces{
+        width: 100%;
+        height: 430px;
+    }
+
+    .change-zone{
+        position: relative;
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+        margin: 100px 0 0 0;
+    }
+    
+    .background-changer,
+    .face-color-changer{
+        bottom: 0;
+        width: 50%;
+        height: fit-content;
+        margin: 30px 0 0 0;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .color{
+        width: 100%;
+        height: 50px;
+        margin: 10px 0 0 0;
+    }
+
+    /*Smily Face*/
+    .mouth{
+        width: 200px;
+        height: 120px;
+    }
+
+    .mouth-hr{
+        display: none;
+    }
+
+    .eyes{
+        width: 130px;
+        height: 130px;
+    }
+
+    .pupil{
+        width: 70px;
+        height: 70px;
+    }
+
+    @keyframes pupilMovement {
+        0%{
+            transform: translateX(-20px);
+            -webkit-transform: translateX(-20px);
+            -moz-transform: translateX(-20px);
+            -ms-transform: translateX(-20px);
+            -o-transform: translateX(-20px);
+        }
+    
+        30%{
+            transform: translateX(20px);
+            -webkit-transform: translateX(20px);
+            -moz-transform: translateX(20px);
+            -ms-transform: translateX(20px);
+            -o-transform: translateX(20px);
+        }
+    
+        60%{
+            transform: translateY(-20px);
+            -webkit-transform: translateY(-20px);
+            -moz-transform: translateY(-20px);
+            -ms-transform: translateY(-20px);
+            -o-transform: translateY(-20px);
+        }
+    
+        90%{
+            transform: translateY(20px);
+            -webkit-transform: translateY(20px);
+            -moz-transform: translateY(20px);
+            -ms-transform: translateY(20px);
+            -o-transform: translateY(20px);
+        }
+    }
+
+    /*Sad Face*/
+    .sad-mouth{
+        width: 200px;
+        height: 130px;
+    }
+
+    .tear{
+        bottom: 28px;
+    }
+
+    .sad-pupil{
+        width: 80px;
+        height: 80px;
+    }
+
+    /*Suprised Face*/
+    .suprised-eyes,
+    .eyes{
+        width: 40%;
+        height: 130px;
+    }
+
+    .suprised-pupil{
+        width: 50px;
+        height: 50px;
+    }
+
+    .suprised-pupil-light{
+        height: 1px;
+        width: 1px;
+        box-shadow: 10px 10px 10px 10px white;
+    }
+
+    .suprised-mouth{
+        width: 40%;
+        height: 35%;
+    }
+
+    @keyframes suprisedMouthMovement {
+        0%{
+            width: 30px;
+            height: 30px;
+    }
+    
+        50%{
+            width: 60px;
+            height: 60px;
+    }
+    
+        100%{
+            width: 100px;
+            height: 100px;
+    }
+    }
+
+    @keyframes suprisedPupilLightMovement {
+        0%{
+            transform: translateX(-5px);
+            -webkit-transform: translateX(-5px);
+            -moz-transform: translateX(-5px);
+            -ms-transform: translateX(-5px);
+            -o-transform: translateX(-5px);
+        }
+    
+        30%{
+            transform: translateX(10px);
+            -webkit-transform: translateX(10px);
+            -moz-transform: translateX(10px);
+            -ms-transform: translateX(10px);
+            -o-transform: translateX(10px);
+        }
+    
+        60%{
+            transform: translateX(10px);
+            -webkit-transform: translateX(10px);
+            -moz-transform: translateX(10px);
+            -ms-transform: translateX(10px);
+            -o-transform: translateX(10px);
+        }
+    }
+
+    @keyframes suprisedPupilMovement {
+        0%{
+            transform: translateX(-20px);
+            -webkit-transform: translateX(-20px);
+            -moz-transform: translateX(-20px);
+            -ms-transform: translateX(-20px);
+            -o-transform: translateX(-20px);
+        }
+    
+        30%{
+            transform: translateX(20px);
+            -webkit-transform: translateX(20px);
+            -moz-transform: translateX(20px);
+            -ms-transform: translateX(20px);
+            -o-transform: translateX(20px);
+        }
+    
+        60%{
+            transform: translateY(-20px);
+            -webkit-transform: translateY(-20px);
+            -moz-transform: translateY(-20px);
+            -ms-transform: translateY(-20px);
+            -o-transform: translateY(-20px);
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .face{
+        width: 90%;
+    }
+
+    .suprised-pupil{
+        width: 40%;
+        height: 40px;
+    }
+
+    .sad-pupil{
+        width: 20%;
+        height: 30px;
+    }
+
+    .sad-light{
+        width: 30%;
+        height: 10px;
+    }
+
+    .tear{
+        width: 10px;
+    }
+
+    .pupil{
+        width: 30%;
+        height: 40px;
+    }
+
+    .suprised-pupil-light{
+        display: none;
+    }
+
+    .light{
+        width: 10px;
+        height: 10px;
+    }
+    
+    .mouth,
+    .sad-mouth{
+        width: 59%;
+        height: 120px;
+    }
+}

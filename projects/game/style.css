@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.sky{
+    width: 100%;
+    height: 28vh;
+    border-bottom: 5px solid rgb(135, 192, 214);
+    animation: sky 10s linear infinite;
+}
+
+.sun{
+    margin: 30px 0 0 0;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    animation: sun 10s linear infinite;
+}
+
+.grass{
+    width: 100%;
+    height: 30vh;
+    background: rgba(107, 161, 19, 0.89);
+    position: relative;
+    animation: grassChange 10s linear infinite;
+}
+
+.streetlight{
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    bottom: 0;
+    left: 20px;
+}
+
+.stick{
+    height: 130px;
+    width: 20px;
+    background: gray;
+    position: relative;
+    top: 39px;
+    margin: 0 auto;
+}
+
+.lamp{
+    width: 50px;
+    height: 30px;
+    background: rgb(110, 112, 108);
+    margin: 0 auto;
+    position: relative;
+    top: 39px;
+    border-bottom: 5px solid white;
+    box-shadow: 2px 20px 20px 5px white;
+    z-index: 1;
+    animation: lights 10s linear infinite;
+}
+
+.road{
+    width: 100%;
+    height: 40vh;
+    background: gray;
+    border-top: 5px solid rgb(161, 158, 158);
+    border-bottom: 5px solid rgb(161, 158, 158);
+    position: relative;
+    animation: roadChange 10s linear infinite;
+}
+
+.lines{
+    position: absolute;
+    width: 100%;
+    border-top: 10px dashed white;
+    top: 50%;
+}
+
+.white-car{
+    animation: carMovement 10s linear infinite;
+    transition: margin 750ms ease-out;
+    width: 300px;
+    position: absolute;
+    top: 30px;
+}
+
+.track{
+    width: 200px;
+    animation: carMovement 10s linear 3s infinite;
+    position: absolute;
+    bottom: -11px;
+}
+
+.plane{
+    width: 100px;
+    animation: planeMovement 10s linear infinite;
+}
+
+/*Animations*/
+@keyframes lights {
+    0%{
+        border-bottom: 5px solid rgb(255, 255, 255);
+        box-shadow: 0 20px 20px 5px white;
+    }
+  
+    50%{
+        border-bottom: 5px solid white;
+        box-shadow: 2px 20px 20px 5px white;
+    }
+  
+    100%{
+        border: none;
+        box-shadow: none;
+    }
+}
+
+@keyframes  carMovement {
+    from{
+        transform: translateX(-300px);
+    }
+    
+    to{
+        transform: translateX(1500px);
+    }
+}
+
+@keyframes sky {
+    0%{
+        background: skyblue;
+        border-bottom: 5px solid rgb(135, 192, 214);
+    }
+  
+    50%{
+        background: midnightblue;
+        border-bottom: 5px solid rgba(63, 80, 177, 0.705);
+    }
+  
+    100%{
+        background: skyblue;
+        border-bottom: 5px solid rgb(135, 192, 214);
+    }
+}
+  
+@keyframes sun {
+    0%{
+        transform: translateX(1500px);
+        background: rgb(153, 153, 36);
+    }
+      
+    45%{
+        background:rgb(235, 235, 223);
+        opacity: 1;
+    }
+  
+    50%{
+        opacity: 1;
+    }
+  
+    70%{
+        opacity: 1;
+        background:  rgb(153, 153, 36);
+    }
+  
+    100%{
+        opacity: 1;
+        transform: translateX(-200px);
+    }
+}
+
+@keyframes planeMovement {
+    0%{
+        transform: translateX(-200px);
+    }
+
+    50%{
+        margin: 30px 0 0 0;
+    }
+
+    80%{
+        margin-bottom: 100px;
+    }
+
+    100%{
+        transform: translateX(1500px);
+    }
+}
+
+@keyframes grassChange {
+    0%{
+        background: rgba(69, 105, 14, 0.89);
+    }
+  
+    50%{
+        background: rgba(107, 161, 19, 0.89);
+    }
+  
+    100%{
+        background: rgba(69, 105, 14, 0.89);
+    }
+}
+
+@keyframes roadChange {
+    0%{
+        background: rgb(97, 96, 96);
+    }
+  
+    50%{
+        background: gray;
+    }
+  
+    100%{
+        background: rgb(97, 96, 96);
+    }
+}
+

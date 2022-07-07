@@ -1,0 +1,520 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to bottom, rgba(70, 70, 150, 90%), rgba(0, 0, 0, 5), rgba(0, 0, 0, 5), rgba(0, 0, 0, 5));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*sidebar*/
+
+.sidebar{
+    position: relative;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    /* background-color: rgba(120, 129, 128, 4); */
+    /* border-right: 1px solid black; */
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+}
+
+.sidebar::-webkit-scrollbar{
+    width: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track{
+    background: yellowgreen;
+}
+
+/*sidebar profile*/
+.profile_name{
+    position: relative;
+    text-align: center;
+    bottom: 43px;
+    right: 0;
+    color: rgb(211, 211, 211);
+    font-weight: bold;
+
+}
+
+.online_status{
+    position: relative;
+    text-align: center;
+    bottom: 23px;
+    right: 22px; 
+    font-size: .9em;
+    color: rgb(238, 238, 238);
+}
+
+.color{
+    position: relative;
+    bottom: 33px;
+    width: 5px;
+    height: 5px;
+    background: yellowgreen;
+    left: 122px;
+    border-radius: 50%;
+
+}
+
+img[src="jet.jpg"]{
+    border-radius: 50%;
+    width: 50px;
+    margin: 10px 0 0 10px;
+}
+
+.sidebar_profile{
+    position: fixed;
+    width: inherit;
+    height: 100px;
+    background: rgba(0, 0, 0, 1);
+}
+
+hr[class="profile_hr"]{
+    width: inherit;
+    position: fixed;
+    top: 98px;
+    background: rgb(219, 219, 219);
+    /* height: 1px; */
+}
+
+a{
+    position: relative;
+    bottom: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(141, 140, 140); 
+}
+
+.signout{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    font-size: .7em;
+}
+
+.signout:hover{
+    color: rgb(211, 210, 210);
+}
+
+.accountinfo{
+    font-size: .7em;
+}
+
+.accountinfo:hover{
+    color: rgb(211, 210, 210);
+}
+
+/*Favourite Artists*/
+
+.sidebar_subsrciption{
+    position: fixed;
+    top: 100px;
+    width: inherit;
+    height: 330px;
+    background-color: rgba(0, 0, 0, 1);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-track-color: rgb(1, 9, 12);
+    color: rgb(192, 192, 192);
+}
+
+.material-icons{
+    font-size: 50px;
+}
+
+/* #kwesi{
+    width: 40px;
+    border-radius: 50%;   
+} */
+
+#jet{
+    width: 40px;
+    border-radius: 50%;
+    margin: 0 0 3px 10px;
+}
+
+.subheaderdiv{
+    background: rgb(36, 36, 36);
+    height: 20px;
+    width: inherit;
+    position: fixed;z-index: 1;
+}
+
+.contents{
+    margin-top: 19px;
+}
+
+.content, .contents{
+    margin-bottom: -19px;
+}
+
+.content:hover, .contents:hover{
+    /* background: rgba(255, 255, 255, 50%); */
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.subheader{
+    position: fixed;
+    left: 60.1px;
+    text-transform: uppercase;
+}
+
+.subp{
+    text-align: center;
+    position: relative;
+    bottom: 35px;
+    right: 30px;
+    margin-left: 23px;
+    font-weight: bolder;
+    font-size: .9em;
+}
+
+.sidebar_subsrciption::-webkit-scrollbar{
+    width: 5px;
+}
+
+.sidebar_subsrciption::-webkit-scrollbar-thumb{
+    background-color: rgba(219, 219, 219, 30%);
+    border-radius: 100px;
+}
+
+.sidebar_subsrciption::-webkit-scrollbar-track{
+    background-color: rgb(1, 9, 12);
+    border-radius: 100px;
+}
+
+/* hr[class="subhr"]{
+    position: fixed;
+    width: 130px;
+    background: violet;
+    height: 3px;
+    bottom: 380px;
+    left: 60.1px;
+} */
+
+/*Recently Played*/
+.sidebar_recentlyplayed{
+    position: fixed;
+    top: 430px;
+    width: inherit;
+    height: 150px;
+    background: rgba(0, 0, 0, 1);
+    border-top: 1px solid rgba(252, 246, 246, 50%);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+
+.sidebar_recentlyplayed::-webkit-scrollbar{
+    width: 5px;
+}
+
+.sidebar_recentlyplayed::-webkit-scrollbar-thumb{
+    background-color: rgba(219, 219, 219, 30%);
+    border-radius: 100px;
+}
+
+.sidebar_recentlyplayed::-webkit-scrollbar-track{
+    background-color: rgb(1, 9, 12);
+    border-radius: 100px;
+}
+
+.recentheader{
+    color: rgb(194, 194, 194);
+    text-align: center;
+}
+
+.recentheader1{
+    height: 19px;
+    width: inherit;
+    background: rgb(36, 36, 36);
+    position: fixed;
+    z-index: 1;
+}
+
+/*Door Kwesi Arthur*/
+img[src="./Recently Played/Door_Kwesi.jpg"]{
+    width: 30px;
+}
+
+.door_kwesi{
+    position: relative;
+    height: 50px;
+    width: inherit;
+    color: white;
+    margin-top: 19px;
+}
+
+.doorimg{
+    position: inherit;
+    top: 5px;
+    left: 3px;
+}
+
+.doorspan{
+    position: inherit;
+    left: 39px;
+    bottom: 31px;
+}
+
+.doorp{
+    font-weight: bold;
+    color: rgb(228, 228, 228);
+    font-size: .8em;
+}
+
+.kwesip{
+    font-size: .7em;
+    color: rgb(168, 168, 168);
+}
+
+.door_kwesi:hover{
+    background: rgba(189, 187, 187, 30%);
+    cursor: pointer;
+}
+
+/*Way Too Big Burna Boy*/
+.way_too_big{
+    position: relative;
+    width: inherit;
+    height: 50px;
+}
+
+img[src="./Recently Played/waytoobig.jpg"]{
+    width: 30px;
+}
+
+.wayspan{
+    position: inherit;
+    left: 39px;
+    bottom: 30px;
+}
+
+.toobigimg{
+    position: inherit;
+    top: 5px;
+    left: 3px;
+}
+
+.wayyp{
+    font-size: .7em;
+    color: rgb(168, 168, 168);
+}
+
+.wayp{
+    font-weight: bold;
+    color: rgb(228, 228, 228);
+    font-size: .8em;
+}
+
+.way_too_big:hover{
+    background: rgba(189, 187, 187, 30%);
+    cursor: pointer;
+}
+
+/*Ride Twenty One Pilots*/
+.ride{
+    position: relative;
+    width: inherit;
+    height: 50px;
+}
+
+img[src="./Recently Played/ride.jpg"]{
+    width: 30px;
+}
+
+.ridespan{
+    position: inherit;
+    left: 39px;
+    bottom: 30px;
+}
+
+.rideimg{
+    position: inherit;
+    top: 5px;
+    left: 3px;
+}
+
+.rideep{
+    font-size: .7em;
+    color: rgb(168, 168, 168);
+}
+
+.ridep{
+    font-weight: bold;
+    color: rgb(228, 228, 228);
+    font-size: .8em;
+}
+
+.ride:hover{
+    background: rgba(189, 187, 187, 30%);
+    cursor: pointer;
+}
+
+/*Stressed Out*/
+.stressed-out{
+    position: relative;
+    width: inherit;
+    height: 50px;
+}
+
+img[src="./Recently Played/ride.jpg"]{
+    width: 30px;
+}
+
+.stressedout-span{
+    position: inherit;
+    left: 39px;
+    bottom: 30px;
+}
+
+.stressed-out-img{
+    position: inherit;
+    top: 5px;
+    left: 3px;
+}
+
+.stress-p{
+    font-size: .7em;
+    color: rgb(168, 168, 168);
+}
+
+.stressedout-p{
+    font-weight: bold;
+    color: rgb(228, 228, 228);
+    font-size: .8em;
+}
+
+.stressed-out:hover{
+    background: rgba(189, 187, 187, 30%);
+    cursor: pointer;
+}
+
+#greeting{
+    position: absolute;
+    left: 500px;
+    color: yellow;
+    top: 5090px;
+    
+}
+
+/*Footer*/
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: inherit;
+    height: 199px;
+    background: rgba(0, 0, 0, 80%);
+    border-top: 2px solid rgb(172, 170, 170);
+}
+
+img[src="./Logo/logo.png"]{
+    width: 300px;
+}
+
+.logo{
+    position: absolute;
+    right: -19px;
+    bottom: 50px;
+}
+
+.search{
+    position: relative;
+
+}
+
+
+/*Section*/
+#topsection{
+    position: relative;
+    margin-left: 300px;
+    width: 1000px;
+    height: 200px;
+    background: rgba(199, 200, 201, 10%);
+    bottom: 700px;
+    border-radius: 30px;
+}
+
+/*Top Part*/
+
+.sectionheading{
+    font-weight: bold;
+    color: rgb(168, 168, 168);
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.sectionheading:hover{
+    color: rgba(139, 139, 139, 0.7)
+}
+
+.img{
+    width: 56px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+img[src="./Main Page Images/favourite.jpg"]{
+    width: 56.7px;
+}
+
+img[src="./Main Page Images/hits.jpg"]{
+    width: 56.7px;
+}
+
+.top-part{
+    position: absolute;
+    display: flex; 
+    top: 30px;
+    right: 20px;
+}
+
+#songs{
+    /* width: 100px;
+    height: 300px; */
+    display: flex;
+    align-items: center;
+}
+
+.background{
+    height: 56px;
+    width: 300px;
+    background: rgba(119, 119, 119, 0.7);
+    margin-left: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.background:hover{
+    background: rgba(139, 139, 139, 0.7);
+}
+
+.sectionp{
+    text-align: center;
+    color: rgb(202, 197, 197);
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+/*bottom part*/
+.bottom-part{
+    position: absolute;
+    display: flex;
+    right: 20px;
+    top: 120px;
+}

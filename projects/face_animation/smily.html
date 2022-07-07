@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="faces">
+        <section class="smily-face">
+            <div class="face" id="smily-face">
+                <div class="eye-holder">
+                    <div class="eyes" id="left-eye">
+                        <div class="pupil">
+                            <div class="light"></div>
+                        </div>
+                    </div>
+                    <div class="eyes" id="right-eye">
+                        <div class="pupil">
+                            <div class="light"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="mouth">
+                    <hr class="mouth-hr">
+                </div>
+            </div>
+        </section>
+        <section class="sad-face">
+            <div class="face" id="sad-face">
+                <div class="eye-holder">
+                    <div class="eyes" id="left-eye">
+                        <div class="sad-pupil">
+                            <div class="sad-light"></div>
+                        </div>
+                        <div class="tear"></div>
+                    </div>
+                    <div class="eyes" id="right-eye">
+                        <div class="sad-pupil">
+                            <div class="sad-light"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sad-mouth"></div>
+            </div>
+        </section>
+        <section class="suprised-face">
+            <div class="face" id="suprised-face">
+                <div class="eye-holder">
+                    <div class="suprised-eyes" id="left-eye">
+                        <div class="suprised-pupil">
+                            <div class="suprised-pupil-light"></div>
+                        </div>
+                    </div>
+                    <div class="suprised-eyes" id="right-eye">
+                        <div class="suprised-pupil">
+                            <div class="suprised-pupil-light"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="suprised-mouth"></div>
+            </div>
+        </section>
+    </section>
+    <div class="selection-zone">
+        <p>Click on any image</p>
+        <img id="smiley-img" src="./smile.png" alt="" width="100px" title="smiley face">
+        <img id="suprised-img"src="./pikachu.png" alt="" width="100px" title="suprised">
+        <img id="sad-img" src="./sadface.png" alt="" width="100px" title="sad face">
+    </div>
+    <section class="change-zone">
+        <div class="background-changer">
+            <p>Change Background Color</p>
+            <div class="color" id="color1"></div>
+            <div class="color" id="color2"></div>
+            <div class="color" id="color3"></div>
+        </div>
+        <div class="face-color-changer">
+            <p>Change face color</p>
+            <div class="color" id="face-color1"></div>
+            <div class="color" id="face-color2"></div>
+            <div class="color" id="face-color3"></div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>

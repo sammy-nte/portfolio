@@ -1,0 +1,578 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav > ul > li{
+    list-style: none;
+    display: inline;
+    padding: 0 50px 0 0;
+}
+
+nav{
+    position: absolute;
+    right: 0;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    padding: 0 0 10px 0;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+nav > ul > li >a:hover{
+    color: orange;
+    transition: all 350ms ease;
+    border-bottom: 3px solid orange;
+}
+
+body{
+    background: rgba(192, 192, 192, 0.205);
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 500px;
+    background: url("./images/graphicediting.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner-article{
+    width: 280px;
+    height: 179px;
+    background: rgba(255, 255, 255, 0.842);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 100px;
+    right: 90px;
+    font-weight: 500;
+}
+
+.banner-article > .profile{
+    width: inherit;
+    height: 59px;
+    background: rgba(226, 134, 48, 0.308);
+    display: flex;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    padding: 20px 0 0 20px;
+    font-weight: normal;
+}
+
+.profile > p{
+    color: gray;
+}
+
+.profile-img{
+    width: 40px;
+    height: 40px;
+    background: url("./images/person.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    border-radius: 50%;
+}
+
+.profile-imgs{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#article-profile-img{
+    background: url("./images/william.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.banner-article-btn{
+    width: 100px;
+    height: 30px;
+    background: rgba(197, 59, 35, 0.877);
+    border: none;
+    border-radius: 3px;
+    margin: 20px 0 0 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.banner-article-btn:hover{
+    cursor: pointer;
+    background: rgba(197, 59, 35, 0.61);
+    transition: background 500ms ease-in;
+}
+
+.banner-article > p{
+    padding: 13px 0 0 20px;
+}
+
+.topics{
+    width: 100%;
+    height: 20px;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+.topics > p{
+    margin: 0 0 0 50px;
+    padding: 0 0 9px 0;
+    color: gray;
+    cursor: pointer;
+    display: inline;
+}
+
+#ui-toggle{
+    border-bottom: 2px solid orange;
+}
+
+.feed{
+    width: 100%;
+    height: 580px;
+    /* position: absolute; */
+    margin:  20px 0 0 0;
+}
+
+#ui-feed{
+    
+}
+
+#ux-feed{
+    display: none;
+}
+
+#development-feed{
+    display: none;
+}
+
+#web-feed{
+    display: none;
+}
+
+.most-popular{
+    width: 100%;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+    padding: 20px 0 0 0;
+}
+
+.container{
+    width: 240px;
+    height: 250px;
+    /* background: rgba(185, 184, 184, 0.479); */
+    margin: 0 0 0 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    position: relative;
+    transition: transform 550ms ease-out;
+    border-bottom: 3px solid rgb(202, 202, 202);
+    border-left: 2px solid rgb(202, 202, 202);
+}
+
+.container:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.container p{
+    font-weight: 500;
+}
+
+.container > p,
+.profile-img{
+   margin: 0 0 0 10px;
+   padding: 8px 0 0 0;
+}
+
+.container-img{
+    width: inherit;
+    height: 70%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    background: url("./images/graphicediting.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.container-profile-name{
+    position: absolute;
+    bottom: 18px;
+    left: 40.8px;
+    font-weight: normal;
+    color: gray;
+}
+
+.ui-posts{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.post-container{
+    width: 200px;
+    height: 230px;
+    align-self: center;
+    border-radius: 10px;
+    transition: transform 550ms ease-out;
+    text-align: center;
+    border-bottom: 3px solid gray;
+    font-weight: 400;
+}
+
+.post-container p {
+    padding: 3px 0 0 0;
+}
+
+.post-container:hover{
+    transform: scale(1.1);
+}
+
+.ui-post-img{
+    width: inherit;
+    height: 80%;
+    background: white;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    background: url("./images/graphicediting.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.recent-posts{
+    position: relative;
+    top: 100px;
+    width: 430px;
+    height: 480px;
+    /* background: teal; */
+    margin: 30px 0 0 20px;
+    font-weight: 400;
+}
+
+.posts{
+    width: inherit;
+    height: 110px;
+    background: rgb(157, 131, 184);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: 0 0 30px 0;
+    display: flex;
+}
+
+.post-img{
+    width: 180px;
+    height: inherit;
+    border-radius: inherit;
+    background: url("./images/digitalmarketing.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.post-profile-img{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 200px;
+    background: url("./images/person.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.info{
+ width: 200px;
+ height: inherit;
+ background: rgb(145, 15, 58);
+}
+
+
+footer{
+    width: 100%;
+    height: 200px;
+    background: rgba(201, 150, 55, 0.589);
+    margin: 90px 0 0 0;
+}
+
+.colorTest{
+    width: 100px;
+    height: 80px;
+    background: rgba(3, 3, 3, 0.719);
+}
+
+.author{
+    color: gray;
+    font-size: .9rem;
+    text-align: left;
+    padding: 9px;
+}
+
+#tags{
+    background: url("./images/tagss.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#semantic{
+    background: url("./images/htmltags.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#verification{
+    background: url("./images/verification.png");
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#frontend{
+    background: url("./images/chrome.png");
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#chrome{
+    background: url("./images/chrome.png");
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fullstack{
+    background: url("./images/fullstack.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#web-hosting{
+    background: url("./images/hosting.png");
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#ide{
+    background: url("./images/ideee.png");
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#css{
+    background: url("./images/css.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#react{
+    background: url("./images/react.png");
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#figma{
+    background: url("./images/figmaa.png");
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#wireframing{
+    background: url("./images/wireframeeee.jpg");
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#prototype{
+    background: url("./images/proto.jpg");
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#color{
+    background: url("./images/colors.jpg");
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#android{
+    background: url("./images/android.png");
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ai{
+    background: url("./images/ai.jpg");
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#flutter{
+    background: url("./images/flutter.png");
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ides{
+    background: url("./images/ide.png");
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ios{
+    background: url("./images/ios.png");
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#vr{
+    background: url("./images/vr.jpg");
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#data{
+    background: url("./images/data.png");
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#foldable{
+    background: url("./images/foldable.jpg");
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#android12{
+    background: url("./images/android12.jpg");
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tesla{
+    background: url("./images/tesla.jpg");
+    background-position: top;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#crypto{
+    background: url("./images/crypto.jpg");
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#xiaomi{
+    background: url("./images/xiamoo.png");
+    background-position: top;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#figma-container:hover .feed{
+    background: chartreuse;
+}
+
+.socials{
+    width: 280px;
+    height: 50px;
+    background: orange;
+    position: relative;
+    right: 0;
+    bottom: 500px;
+    display: flex;
+    align-items: center;
+    padding: 20px 0 0 0;
+    font-weight: 500;
+}
+
+.socials > p{
+    margin: 0 10px 0 0;
+}
+
+.social-icons{
+    margin: 0 0 0 5px;
+    width: 150px;
+    height: 33px;
+}
+
+.fa{
+    margin: 0 0 3px 10px;
+    width: 30px;
+    height: 30px;
+    /* border-radius: 50%; */
+}

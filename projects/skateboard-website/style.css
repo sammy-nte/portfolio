@@ -1,0 +1,882 @@
+/*Universal Setting*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(182, 181, 181);
+}
+
+body{
+    background: url("medium.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    overflow-x: visible;
+}
+
+/*Sidebar*/
+#sidebar{
+    position: relative;
+    top: 50px;
+    left: 30px;
+    width: 13rem;
+    height: 30rem;
+    background: rgba(31,29,43,0.9);
+    color: rgb(182, 181, 181);
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.sidebar-header{
+    text-align: center;
+    color: rgb(219, 219, 219);
+}
+
+/*Sidebar menu*/
+#sidebar-menu{
+    margin: 20px 0 0 0;
+}
+
+.sidebar-discovery,
+.sidebar-trending,
+.sidebar-streaming,
+.sidebar-playlist,
+.sidebar-bookmark{
+    display: flex;
+    height: 30px;
+    width: inherit;
+    margin-top: 3px;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+}
+
+.sidebar-discovery:hover,
+.sidebar-trending:hover,
+.sidebar-streaming:hover,
+.sidebar-playlist:hover,
+.sidebar-bookmark:hover{
+    color: rgb(255, 255, 255);
+}
+
+.p{
+    margin: 0 0 0 10px;
+    font-size: .9rem;
+}
+
+#sidebar-menu-header{
+    margin: 0 0 0 10px;
+}
+
+#discovery-icon,
+#trending-icon,
+#streaming-icon,
+#playlist-icon,
+#bookmark-icon{
+    font-size: 28px;
+    margin: 0 0 0 10px;
+    color: rgb(255, 255, 255);
+}
+
+.sidebar-discovery:hover > #discovery-icon{
+    background-color: rgb(255, 115, 0);
+    transition: ease-in .2s;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.sidebar-trending:hover > #trending-icon{
+    background-color: rgb(27, 180, 190);
+    transition: ease-in .2s;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.sidebar-streaming:hover > #streaming-icon{
+    background-color: rgb(235, 52, 52);
+    transition: ease-in .2s;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.sidebar-playlist:hover > #playlist-icon{
+    background-color: rgb(111, 62, 202);
+    transition: ease-in .2s;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.sidebar-bookmark:hover > #bookmark-icon{
+    background-color: rgb(121, 163, 53);
+    transition: ease-in .2s;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#sidebar-hr{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.category-header{
+    margin: 10px 0 0 10px;
+}
+
+.pp{
+    margin: 0 0 0 10px;
+    font-size: .9rem;
+}
+
+.category-livestream,
+.category-tutorial,
+.category-competition,
+.category-community{
+    display: flex;
+    height: 30px;
+    width: inherit;
+    margin-top: 3px;
+    align-items: center;   
+    cursor: pointer;
+    margin: 10px 0 0 0;
+}
+
+.category-livestream:hover,
+.category-tutorial:hover,
+.category-competition:hover,
+.category-community:hover{
+    color: rgb(255, 255, 255);
+}
+
+#livestream-icon,
+#tutorial-icon,
+#competition-icon,
+#community-icon{
+    font-size: 28px;
+    margin: 0 0 0 10px;
+    color: rgb(255, 255, 255);
+}
+
+.category-livestream:hover > #livestream-icon{
+    background-color: rgb(235, 52, 52);;
+    transition: ease-in .2s;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.category-tutorial:hover > #tutorial-icon{
+    background-color: rgb(157, 185, 29);
+    transition: ease-in .2s;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.category-competition:hover > #competition-icon{
+    background-color: rgb(238, 105, 105);
+    transition: ease-in .2s;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.category-community:hover > #community-icon{
+    background-color: rgb(55, 85, 223);
+    transition: ease-in .2s;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+/*main section*/
+#main-section{
+    position: fixed;
+    margin: 0 auto;
+    left: 300px;
+    top: 50px;
+    height: 600px;
+    width: 1100px;
+    background: rgba(31,29,43,0.9);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 4.2px;
+    border-top-left-radius: 4.2px;
+    border-bottom-left-radius: 4.2px;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+
+#main-section::-webkit-scrollbar{
+    width: 5px;
+}
+
+#main-section::-webkit-scrollbar-thumb{
+    background: rgb(70, 70, 70);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#main-section::-webkit-scrollbar-track{
+    background: rgba(31,29,43,0.9);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+header{
+    position: fixed;
+    width: inherit;
+    height: 3.2rem;
+    z-index: 1;
+    background: rgba(31,29,43,1);
+    border-top-left-radius: 4.2px;
+    border-top-right-radius: 4.2px;
+}
+
+header > input[name="searchbar"]{
+    font-family: 'Inter', sans-serif;
+}
+
+.input{
+    position: relative;
+    top: 10px;
+    left: 90px;
+    width: 30rem;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.input > input{
+    width: 300px;
+    height: 1.31rem;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: rgb(124, 121, 139);
+    border: none;
+    cursor: pointer;
+}
+
+.input > input:focus{
+   border: 2px solid black;
+   outline: none;
+}
+
+#search-icon{
+    background: rgb(124, 121, 139);
+    height: 20.9px;
+    color: rgb(255, 255, 255);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.profile{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    color: rgb(238, 238, 238);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.profile > img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+
+.ppp{
+    margin: 0 10px 0 0;
+}
+
+#bell{
+    cursor: pointer;
+}
+
+.discover{
+    margin: 70px 0 0 0;
+    display: flex;
+    position: relative;
+    height: 22rem;
+    width: inherit;
+    /* background: khaki; */
+}
+
+.discover-header{
+    color:rgb(233, 231, 231);
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    margin: 0 0 0 30px;
+}
+
+.firstdiscover{
+    position: absolute;
+    left: 30px;
+    width: 33rem;
+    height: 18rem;
+    background: url("tips.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin: 50px 30px 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.firstdiscover:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: ease-in .3s;
+}
+
+.firstdiscover-section-name{
+    position: absolute;
+    left: 90px;
+    height: 18px;
+    width: 120px;
+    top: 80%;
+    color: rgb(214, 214, 214);
+}
+
+.firstdiscover-section-views{
+    position: absolute;
+    left: 90px;
+    height: 18px;
+    width: 180px;
+    top: 85%;
+    color: rgb(233, 233, 233);
+}
+
+.firstdiscover-section-title{
+    position: absolute;
+    font-size: 2rem;
+    top: 30%;
+    left: 3%;
+    color: rgb(255, 254, 254);
+}
+
+.first-discover-image{
+    position: absolute;
+    left: 30px;
+    height: 50px;
+    width: 50px;
+    background: url("person.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    right: 30px;
+    top: 77%;
+}
+
+.seconddiscover{
+    position: absolute;
+    right: 30px;
+    width: 30rem;
+    height: 18rem;
+    border-radius: 20px;
+    margin: 50px 0 0 0;
+    background: url("skateees.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.seconddiscover:hover{
+    transform: scale(1.1);
+    transition: ease-in .3s;
+    cursor: pointer;
+}
+
+.seconddiscover-section-name{
+    position: absolute;
+    left: 90px;
+    height: 18px;
+    width: 120px;
+    top: 80%;
+    color: rgb(214, 214, 214);
+}
+
+.seconddiscover-section-views{
+    position: absolute;
+    left: 90px;
+    height: 18px;
+    width: 180px;
+    top: 85%;
+    color: rgb(233, 233, 233);
+}
+
+.seconddiscover-section-title{
+    position: absolute;
+    font-size: 2rem;
+    top: 30%;
+    left: 3%;
+    color: rgb(255, 254, 254);
+}
+
+.second-discover-image{
+    position: absolute;
+    left: 30px;
+    height: 50px;
+    width: 50px;
+    background: url("william.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    right: 30px;
+    top: 77%;
+}
+
+.most-watched-main{
+    position: relative;
+    width: inherit;
+    height: 22rem;
+    margin: 30px 0 0 0;
+}
+
+.most-watched-header{
+    color:rgb(233, 231, 231);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    margin: 0 0 5px 30px;
+}
+
+.most-watched{
+    position: relative;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jake{
+    height: 18rem;
+    width: 15.7rem;
+    background: rgb(158, 187, 78);
+    border-radius: 13px;
+}
+
+.william{
+    height: 18rem;
+    width: 15.7rem;
+    background: rgb(98, 107, 136);
+    margin: 0 8px 0 0;
+    border-radius: 13px;
+}
+
+/*Most Watched/ Andy-William*/
+.andy-william{
+    position: relative;
+    height: 18rem;
+    width: 15.7rem;
+    background: royalblue;
+    margin: 0 0 0 5px;
+    border-radius: 13px;
+    transition: transform .5s;
+    filter: grayscale(100%);
+}
+
+.andy-william:hover{
+    background: url();
+    margin-left: 30px;
+    transform: scale(1.2);
+    filter: grayscale(0);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.andy-bottom{
+    position: absolute;
+    bottom: 0;
+    width: inherit;
+    height: 8rem;
+    background: rgba(31,29,43,1);
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    font-family: 'Inter', sans-serif;
+    color: rgb(182, 181, 181);
+}
+
+.name{
+    position: absolute;
+    left: 20px;
+    margin: 9px 0 5px 0;
+}
+
+.title{
+    position: absolute;
+    left: 20px;
+    top: 39px;
+    margin: 0 auto;
+}
+
+.views{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    margin: 10px 0 0 0;
+    font-size: 0.8rem;
+}
+
+.top-image{
+    position: absolute;
+    width: inherit;
+    height: 55.6%;
+    background: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+.time-tag{
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    background: rgba(203, 201, 214, 0.2);
+    border-radius: 3px;
+    width: 50px;
+}
+
+.time-p{
+    color: rgb(226, 226, 226);
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.profile-image-andy-william{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: url("william.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    border-radius: 50%;
+    right: 30px;
+    bottom: 38%;
+    transition: transform .5s;
+}
+
+.profile-image-andy-william:hover{
+    transform: scale(1.3);
+}
+
+/*Most Watched/ john*/
+.john{
+    height: 18rem;
+    width: 15.7rem;
+    background: rgb(157, 163, 182);
+    border-radius: 13px;
+    transition: transform .5s;
+    filter: grayscale(100%);
+}
+
+.john:hover{
+    background: url();
+    transform: scale(1.2);
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+.john-bottom-section{
+    position: absolute;
+    bottom: 0;
+    width: inherit;
+    height: 8rem;
+    background: rgba(31,29,43,1);
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    font-family: 'Inter', sans-serif;
+    color: rgb(182, 181, 181);
+}
+
+.john-bottom-section-name{
+    position: absolute;
+    left: 20px;
+    margin: 9px 0 5px 0;
+}
+
+.john-bottom-section-title{
+    position: absolute;
+    left: 20px;
+    top: 39px;
+    margin: 0 auto;
+}
+
+.john-bottom-section-views{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    margin: 10px 0 0 0;
+    font-size: 0.8rem;
+}
+
+.john-background-image{
+    position: absolute;
+    width: inherit;
+    height: 55.6%;
+    background: url("jump.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: bottom;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+.john-time-tag{
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    background: rgba(203, 201, 214, 0.3);
+    border-radius: 3px;
+    width: 50px;
+}
+
+.john-time-p{
+    color: rgb(226, 226, 226);
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.profile-image-john{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: url("john.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    border-radius: 50%;
+    right: 30px;
+    bottom: 38%;
+    transition: transform .5s;
+}
+
+.profile-image-john:hover{
+    transform: scale(1.3);
+}
+
+
+/*Most watched Jake*/
+.jake{
+    height: 18rem;
+    width: 15.7rem;
+    background: rgb(157, 163, 182);
+    border-radius: 13px;
+    transition: transform .5s;
+    filter: grayscale(100%);
+}
+
+.jake:hover{
+    background: url();
+    /* margin-left: 30px; */
+    transform: scale(1.2);
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+.jake-bottom-section{
+    position: absolute;
+    bottom: 0;
+    width: inherit;
+    height: 8rem;
+    background: rgba(31,29,43,1);
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    font-family: 'Inter', sans-serif;
+    color: rgb(182, 181, 181);
+}
+
+.jake-bottom-section-name{
+    position: absolute;
+    left: 20px;
+    margin: 9px 0 5px 0;
+}
+
+.jake-bottom-section-title{
+    position: absolute;
+    left: 20px;
+    top: 39px;
+    margin: 0 auto;
+}
+
+.jake-bottom-section-views{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    margin: 10px 0 0 0;
+    font-size: 0.8rem;
+}
+
+.jake-background-image{
+    position: absolute;
+    width: inherit;
+    height: 55.6%;
+    background: url("skates.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+.jake-time-tag{
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    background: rgba(203, 201, 214, 0.2);
+    border-radius: 3px;
+    width: 50px;
+}
+
+.jake-time-p{
+    color: rgb(226, 226, 226);
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.profile-image-jake{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: url("valorant.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    border-radius: 50%;
+    right: 30px;
+    bottom: 38%;
+    transition: transform .5s;
+}
+
+.profile-image-jake:hover{
+    transform: scale(1.3);
+}
+
+/*Most Watched William*/
+.william{
+    height: 18rem;
+    width: 15.7rem;
+    background: rgb(157, 163, 182);
+    border-radius: 13px;
+    transition: transform .5s;
+    filter: grayscale(100%);
+}
+
+.william:hover{
+    background: url();
+    margin-right: 30px;
+    transform: scale(1.2);
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+.william-bottom-section{
+    position: absolute;
+    bottom: 0;
+    width: inherit;
+    height: 8rem;
+    background: rgba(31,29,43,1);
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    font-family: 'Inter', sans-serif;
+    color: rgb(182, 181, 181);
+}
+
+.william-bottom-section-name{
+    position: absolute;
+    left: 20px;
+    margin: 9px 0 5px 0;
+}
+
+.william-bottom-section-title{
+    position: absolute;
+    left: 20px;
+    top: 39px;
+    margin: 0 auto;
+}
+
+.william-bottom-section-views{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    margin: 10px 0 0 0;
+    font-size: .8rem;
+}
+
+.william-time-tag{
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    background: rgba(203, 201, 214, 0.2);
+    border-radius: 3px;
+    width: 50px;
+}
+
+.william-time-p{
+    color: rgb(226, 226, 226);
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.profile-image-william{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: url("person.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    border-radius: 50%;
+    right: 30px;
+    bottom: 38%;
+    transition: transform .5s;
+}
+
+.william-background-image{
+    position: absolute;
+    width: inherit;
+    height: 55.6%;
+    background: url("skatees.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: bottom;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+.profile-image-william:hover{
+    transform: scale(1.3);
+}
+
+@media screen and (max-width: 480px){
+    sidebar{
+        display: none;
+    }
+}

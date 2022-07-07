@@ -1,0 +1,392 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 93px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+}
+
+/* Header */
+.dots{
+    display: flex;
+    position: relative;
+    width: 3.2rem;
+    padding: 10px 0 0 10px;
+    justify-content: space-between;
+}
+
+
+
+.dot{
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    background: rgba(151, 151, 151, 0.521);
+}
+
+.arrows{
+    position: relative;
+    bottom: 1.2rem;
+    float: right;
+    width: 3rem;
+    height: 1rem;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    color: rgba(151, 151, 151, 0.664);
+    font-weight: 900;
+}
+
+.header-hr{
+    margin: 18px 0 0 0;
+    border-top: 2px solid rgba(151, 151, 151, 0.664);
+    border-bottom: none;
+}
+
+.logo{
+    position: relative;
+    width: 8rem;
+    height: 3rem;
+    margin: 0 0 0 32px;
+}
+
+#layer{
+    position: absolute;
+    bottom: -46px;
+}
+
+.header-nav{
+    position: absolute;
+    width: 410px;
+    height: 3.01rem;
+    right: 140.01px;
+    top: 42.8px;
+}
+
+.header-nav > ul {
+    display: flex;
+    width: inherit;
+    height: inherit;
+}
+
+.header-nav > ul > li {
+    display: flex;
+    background-color: darkblue;
+    list-style: none;
+    margin: -0.1px;
+    width: 140px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#login{
+    color: black;
+    background: rgba(255, 255, 255, 0.897);
+}
+
+#login:hover{
+    background: rgb(207, 204, 204);
+    transition: ease-in .2s;
+    cursor: pointer;
+}
+
+#donate-now{
+    background: rgba(242,87,43,1);
+}
+
+#donate-now:hover{
+    background: rgba(242, 86, 43, 0.808);
+    transition: ease-in .2s;
+    cursor: pointer;
+}
+
+#take-action{
+    background: rgba(247,153,40,1);
+}
+
+#take-action:hover{
+    background: rgba(247, 154, 40, 0.795);
+    transition: ease-in .2s;
+    cursor: pointer;
+}
+
+.header-menu{
+    display: flex;
+    position: absolute;
+    top: 42px;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-menu{
+    background: rgba(0,0,0,1);
+    width: 140px;
+    height: 51px;
+}
+
+.header-menu:hover{
+    background: rgba(0, 0, 0, 0.801);
+    transition: ease-in .2s;
+    cursor: pointer;
+}
+
+.header-menu:hover > .menu-content{
+    display: block;
+}
+
+.menu-content{
+    position: absolute;
+    display: none;
+    width: 90px;
+    height: 90px;
+    background: white;
+    top: 30px;
+    z-index: 1;
+}
+
+
+.lines{
+    width: 13px;
+    height: 2px;
+    background-color: white;
+    margin: 3px 0 0 0;
+}
+
+.header-menu > p{
+    margin: 0 8px 0 0;
+}
+
+
+main{
+    position: relative;
+    background: url("giraffe.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+}
+
+main > section{
+    position: absolute;
+    margin: 30px 0 0 50px;
+    right: 100px;
+}
+
+.top-line{
+    width: 180px;
+    height: 30px;
+    background: rgba(241,86,42,255);
+    margin: 0 0 10px 0;
+}
+
+main > section >  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.color-change{
+    color: rgba(239,88,41,255);
+}
+
+main > section > p {
+    font-family: 'Roboto', sans-serif;
+    width: 290px;
+    text-align: justify;
+    color: rgb(8, 31, 31);
+}
+
+.hero-button{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    bottom: -20px;
+    margin: 0 0 0 50px;
+    background: rgba(0,0,0,1);
+    color: white;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+
+.hero-button:hover{
+    transition: ease-in .3s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Article Section */
+.something{
+    position: relative;
+    width: 100%;
+    height: 495px;
+    margin: 30px 0 0 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(247, 154, 40, 0), rgba(247, 154, 40, 0.527), rgba(247, 154, 40, 0.486), rgba(247, 154, 40, 0.1) );
+}
+
+.area{
+    position: relative;
+    width: 72%;
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#article-header {
+    position: relative;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0 -30px 0;
+}
+
+.article-box{
+    position: relative;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    filter: grayscale(1);
+}
+
+.article-box:hover{
+    transform: scale(1.2);
+    transition: ease-in-out .3s;
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+.image{
+    position: absolute;
+    height: 70%;
+    width: inherit;
+}
+
+#art1-image{
+    background: url("./article-images/mamot.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: bottom;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#art2-image{
+    background: url("./article-images/birds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#art3-image{
+    background: url("./article-images/africanmonkey.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#profile1{
+    background: url("./profile-images/john.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+}
+
+.profile-image{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    bottom: 90px;
+    right: 30px;
+    z-index: 1;
+}
+
+.profile-image:hover{
+    transform: scale(1.1);
+    transition: ease-in .3s;
+}
+
+#profile2{
+    background: url("./profile-images/person.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+}
+
+#profile3{
+    background: url("./profile-images/william.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+}
+
+.text{
+    position: absolute;
+    background:rgb(255, 255, 255);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    bottom: 0;
+    height: 30%;
+    width: inherit;
+}
+
+.text > p {
+    margin: 50px 0 0 0;
+    font-size: 1.5rem;
+    font-family: 'Bangers', cursive;
+    font-weight: 700;
+    text-align: center;
+}
+
+.text:hover > #profile1-text{
+    color: rgba(30, 126, 30, 0.829);
+    transition: ease-in .3s;
+}
+
+.text:hover > #profile2-text{
+    color: rgba(18, 133, 123, 0.829);
+    transition: ease-in .3s;
+}
+
+.text:hover > #profile3-text{
+    color: rgba(165, 127, 22, 0.644);
+    transition: ease-in .3s;
+}
+
+footer{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    background: rgba(218, 107, 34, 0.781)
+}

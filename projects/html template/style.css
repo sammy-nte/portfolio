@@ -1,0 +1,588 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 16px;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    background: teal;
+}
+
+.top-section{
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    background: #065261;
+    display: flex;
+    align-items: center;
+}
+
+.top-section.bg{
+    background: white;
+    position: fixed;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    z-index: 9;
+}
+
+.sitename h1{
+    color: black;
+    font-family: 'Lobster Two', cursive;
+}
+
+.nav li{
+    display: inline-block;
+    color: black;
+    opacity: 1;
+    margin-right: 10px;
+    font-size: 1.3rem;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.nav li:hover{
+    color: rgb(236, 236, 236);
+    cursor: pointer;
+}
+
+.nav a:focus{
+    border: 1px solid rgb(197, 197, 197);
+    outline: none;
+}
+
+.navigation{
+    position: absolute;
+    display: inline;
+    right: 0;
+    width: 400px;
+    height: 23px;
+    opacity: 80%;
+}
+
+.image{
+    width: 100%;
+    height: 35rem;
+    background: url("work.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.event-section{
+    width: 100%;
+    height: 28rem;
+}
+
+.event-section h3{
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.offerp{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.event-types{
+    width: 100%;
+    height: 22.5rem;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
+.campus-events{
+    position: relative;
+    border: 1px solid rgb(158, 158, 158);
+    height: 22rem;
+    width: 20rem;
+    background: url("partymedium.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px 1px 1px rgb(190, 190, 190);
+}
+
+.content-creation{
+    position: relative;
+    /* border: 1px solid black; */
+    height: 22rem;
+    width: 20rem;
+    background: url("contentcreation.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 1px 1px rgb(190, 190, 190);
+}
+
+.graphic-and-editing{
+    position: relative;
+    /* border: 1px solid black; */
+    height: 22rem;
+    width: 20rem;
+    background: url("graphicediting.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px 1px 1px rgb(190, 190, 190);
+}
+
+.digital-marketing{
+    position: relative;
+    /* border: 1px solid black; */
+    height: 22rem;
+    width: 20rem;
+    background: url("market.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 1px 1px rgb(190, 190, 190);
+}
+
+.campus-events,
+.content-creation,
+.graphic-and-editing,
+.digital-marketing{
+    margin: 0 10px 0 0;
+}
+
+.event-section-two{
+    width: 100%;
+    height: 28rem;
+}
+
+.event-types-two{
+    width: 100%;
+    height: 22.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.sales-activation{
+    position: relative;
+    /* border: 1px solid black; */
+    height: 22rem;
+    width: 20rem;
+    background: url("salesactivation.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 1px 1px rgb(190, 190, 190);
+}
+
+.public-relation{
+    position: relative;
+    /* border: 1px solid black; */
+    height: 22rem;
+    width: 20rem;
+    background: url("publicrelation.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 1px 1px rgb(190, 190, 190);
+}
+
+.campus-shows{
+    position: relative;
+    /* border: 1px solid black; */
+    height: 22rem;
+    width: 20rem;
+    background: url("publicrelation.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 1px 1px rgb(190, 190, 190);
+}
+
+.music-promotion{
+    position: relative;
+    /* border: 1px solid black; */
+    height: 22rem;
+    width: 20rem;
+    background: url("music.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px 1px 1px rgb(190, 190, 190);
+}
+
+.sales-activation,
+.public-relation,
+.campus-shows,
+.music-promotion{
+    margin: 0 10px 0 0;
+}
+
+.text-overlay{
+    display: flex;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(131, 131, 131, 0.5);
+    align-items: center;
+    justify-content: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 2rem;
+    color: white;
+}
+
+.text-overlay:hover{
+    opacity: 1;
+    transition: ease-in 0.30s;
+    cursor: pointer;
+}
+
+.newsletter-section{
+    position: relative;
+    bottom: 1.3rem;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+
+.newsletter h3{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Special Elite', cursive;
+}
+
+.newsletter p{
+    font-size: 1.3rem;
+    font-family: 'Special Elite', cursive;
+}
+
+input[type="email"]{
+    width: 300px;
+    height: 2rem;
+}
+
+input[type="submit"]{
+    width: 100px;
+    background: #0A92AD;
+    border: none;
+    height: 2rem;
+    font-family: 'Special Elite', cursive;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background: #32a6bd;
+}
+
+::-webkit-input-placeholder{
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+}
+
+:-ms-input-placeholder{
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+}
+
+::placeholder{
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+}
+
+.newsletter-section.newsletter-animation{
+    animation: animation 3s linear;
+    -webkit-animation: animation 3s linear;
+    opacity: 1;
+}
+
+@keyframes animation {
+    from{
+        transform: translateX(1000px);
+        -webkit-transform: translateX(1000px);
+        -moz-transform: translateX(1000px);
+        -ms-transform: translateX(1000px);
+        -o-transform: translateX(1000px);
+    }
+    to{
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+}
+
+
+span{
+    position: absolute;
+    margin: 0 0 0 130px;
+}
+
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    background: #2B6D87;
+    bottom: 0;
+}
+
+.fa-instagram{
+    color:rgb(230, 230, 230)
+}
+
+.fa-instagram:hover{
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.fa-facebook{
+    color:rgb(230, 230, 230)
+}
+
+.fa-facebook:hover{
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.fa-twitter-square{
+    color:rgb(230, 230, 230);
+}
+
+.fa-twitter-square:hover{
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.fa-instagram,
+.fa-facebook,
+.fa-twitter{
+    margin: 0 10px 0 0;
+}
+
+.socials{
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 10px 10px;
+}
+
+.socials p{
+    font-size: 1.3rem;
+    color: rgb(230, 230, 230);
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.something{
+    position: absolute;
+    right: 10px;
+    line-height: 2rem;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.something a{
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+}
+
+.something a:hover{
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 480px){
+    .navigation{
+        display: none;
+    }
+    
+    .image{
+        height: 19rem;
+    }
+    
+    .event-section h3{
+        font-size: 1.3rem;
+    }
+    
+    .offerp{
+        font-size: 1.2rem;
+    }
+    
+    .event-types,
+    .event-types-two{
+        flex-direction: column;
+        height: 60rem;
+        position: relative;
+    }
+    
+    .campus-events,
+    .content-creation,
+    .graphic-and-editing,
+    .digital-marketing,
+    .sales-activation,
+    .public-relation,
+    .campus-shows,
+    .music-promotion{
+        width: 100%;
+        margin: 0 0 10px 0; 
+        height: 80rem;
+    }
+    
+    .text-overlay{
+        position: absolute;
+        opacity: 1;
+        height: 50px;
+        width: 77%;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        top: 55%;
+        background: #b0c9d8a9;
+    }        
+    
+    .event-types-two{
+        top: 500px;
+        margin: 85px 0 0 0;
+    }
+    
+    .newsletter-section{
+       position: relative;
+       top: 999px;
+       margin: 20px 0 0 0;
+       background-color: #057a6fb7;
+       width: 100%;
+       height: 7rem;
+    }
+    
+    .newsletter h3{
+        padding: 10px 0 0 0;
+        font-size: 1.3rem;
+    }
+    
+    .newsletter{
+        position: relative;
+        width: 100%;
+        height: inherit; 
+    }
+    
+    input[type="email"]{
+        position: absolute;
+        left: 3%;
+        width: 200px;
+        border-radius: 10px;
+        border: none;
+    }
+    
+    input[type="email"]:focus{
+        outline: none;
+        border: 1px solid black;
+    }
+
+    input[type="submit"]{
+        position: absolute;
+        width: 120px;
+        right: 14%;
+        border-radius: 10px;
+    }
+    
+    .newsletter p{
+        font-size: .88rem;
+        margin: 5px; 
+        text-align: center;
+    }
+    
+    .socials p{
+        display: none;
+    }
+    
+    footer{
+        position: relative;
+        top: 1000px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 400px) {
+    input[type="email"]{
+        position: absolute;
+        left: 8px;
+        width: 230px;
+    }
+
+    input[type="email"]:focus{
+        outline: none;
+        border: 1px solid black;
+    }
+    
+    input[type="submit"]{
+        position: absolute;
+        width: 100px;
+        right: 8px;
+    }
+
+    /* .text-overlay p{
+        font-size: 1.5rem;          
+    } */
+
+    .something a:hover{
+        text-decoration: none9;
+    }
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 344px) {
+    .sales-activation{
+        margin: 30px 0 10px 0;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 349px) {
+    input[type="email"]{
+        width: 208px;
+        left: 7px;
+    }
+
+    input[type="submit"]{
+        width: 90px;
+        right: 10px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 320px) {
+    input[type="email"]{
+        width: 190px;
+        left: 3px;
+    }
+
+    input[type="submit"]{
+        width: 90px;
+        right: 10px;
+    }
+}
+
+@media screen and (min-width: 438px) and (max-width: 480px) {
+    input[type="email"]{
+        width: 300px;
+        left: 7px;
+    }
+
+    input[type="submit"]{
+        position: absolute;
+        right: 8px;
+    }
+
+    
+}
