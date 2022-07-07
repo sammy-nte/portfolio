@@ -13,12 +13,6 @@ header a{
     font-size: 1em !important;
 }
 
-a{
-    color: white;
-    text-decoration: none;
-    font-size: 2em;
-}
-
 #real-world{
     width: 100%;
     height: fit-content;
@@ -63,6 +57,13 @@ a{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+#upper-section a,
+#real-world__projects a{
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
 }
 
 .container{
