@@ -334,6 +334,7 @@ footer{
         display: none;
         animation: menuMovement 1s linear;
         -webkit-animation: menuMovement 1s linear;
+        -moz-animation: menuMovement 1s linear;
     }
 
     .logo{
@@ -418,7 +419,25 @@ footer{
             -moz-transform: translateX(500px);
             -ms-transform: translateX(500px);
             -o-transform: translateX(500px);
-}
+        }
+
+        to{
+            transform: none;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+        }
+    }
+
+    @-webkit-keyframes menuMovement {
+        from{
+            transform: translateX(500px);
+            -webkit-transform: translateX(500px);
+            -moz-transform: translateX(500px);
+            -ms-transform: translateX(500px);
+            -o-transform: translateX(500px);
+        }
 
         to{
             transform: none;
@@ -437,7 +456,27 @@ footer{
             -ms-transform: translateY(-60px);
             -o-transform: translateY(-60px);
             opacity: 0;
-}
+        }
+
+        to{
+            transform: none;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes contentMovement {
+        from{
+            transform: translateY(-60px);
+            -webkit-transform: translateY(-60px);
+            -moz-transform: translateY(-60px);
+            -ms-transform: translateY(-60px);
+            -o-transform: translateY(-60px);
+            opacity: 0;
+        }
 
         to{
             transform: none;
