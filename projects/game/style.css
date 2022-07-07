@@ -11,6 +11,11 @@
     animation: sky 10s linear infinite;
 }
 
+.plane{
+    width: 100px;
+    animation: planeMovement 10s linear infinite;
+}
+
 .sun{
     margin: 30px 0 0 0;
     width: 90px;
@@ -29,10 +34,14 @@
 
 .streetlight{
     position: absolute;
-    height: 200px;
+    height: inherit;
     width: 100px;
     bottom: 0;
     left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .stick{
@@ -65,6 +74,9 @@
     border-bottom: 5px solid rgb(161, 158, 158);
     position: relative;
     animation: roadChange 10s linear infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .lines{
@@ -78,21 +90,19 @@
     animation: carMovement 10s linear infinite;
     transition: margin 750ms ease-out;
     width: 300px;
-    position: absolute;
-    top: 30px;
+    /* position: absolute;
+    top: 30px; */
 }
 
 .track{
     width: 200px;
-    animation: carMovement 10s linear 3s infinite;
-    position: absolute;
+    animation: carMovement 10s linear infinite;
+    /* position: absolute;
     bottom: -11px;
+    left: -190px; */
+    -webkit-animation: carMovement 10s linear infinite;
 }
 
-.plane{
-    width: 100px;
-    animation: planeMovement 10s linear infinite;
-}
 
 /*Animations*/
 @keyframes lights {
@@ -168,15 +178,20 @@
 @keyframes planeMovement {
     0%{
         transform: translateX(-200px);
-    }
+        transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -o-transform: translateY(-30px);
+}
 
-    50%{
+    /* 50%{
         margin: 30px 0 0 0;
     }
 
     80%{
         margin-bottom: 100px;
-    }
+    } */
 
     100%{
         transform: translateX(1500px);
@@ -211,3 +226,32 @@
     }
 }
 
+@media screen and (max-width: 880px) {
+    .white-car{
+        width: 200px;
+    }
+
+    .track{
+        width: 140px;
+    }
+}
+
+@media screen and (max-height: 540px) {
+    .sun{
+        height: 41px;
+        width: 41px;
+    }
+
+    .lines{
+        border-top: 5px dashed white;
+    }
+
+    .white-car{
+        width: 200px;
+        top: 10px;
+    }
+
+    .track{
+        width: 140px;
+    }
+}
