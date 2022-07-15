@@ -281,4 +281,16 @@ body{
         width: 90%;
         text-align: justify;
     }
+
+    .web-development,
+    .archivist{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .web-development,
+    .archivist{
+        width: 90%;
+    }
 }
