@@ -1,4 +1,13 @@
 /*HEADER*/
+:root{
+    --primary-color : #1f446b;
+    --primary-color-lighter: #2a597a;
+    --secondary-color : #336a89;
+    --secondary-color-lighter: #407e96; 
+    --link-color: #038282;
+}
+
+
 body{
     display: flex;
     flex-direction: column;
@@ -6,7 +15,7 @@ body{
 }
 
 header{
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -14,13 +23,17 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: white !important;
 }
 
 .logo{
     position: absolute;
     left: 100px;
+}
+
+#header-logo{
     font-weight: 700;
-    font-size: 2em;
+    font-size: 2em !important;
 }
 
 .logo-fullstop{
@@ -52,23 +65,93 @@ header a{
     text-decoration: none;
     color: black;
     font-weight: 500;
+    position: relative;
+}
+
+header nav ul li a{
+    padding: 0 0 3px 0;
+}
+
+header nav ul li a::after,
+.home-link a::after{
+    content: "";
+    width: 0px;
+    color: blue;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    transition: all 350ms ease;
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    -ms-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+}
+
+header nav ul li:hover a::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--secondary-color);
+    transform-origin: left;
+    width: 89px;
+}
+
+.home-link:hover a::after{
+    width: 53px;
 }
 
 header a:hover{
-    color: rgb(219, 82, 18);
+    color: var(--secondary-color);
     cursor: pointer;
-    border-bottom: 2px solid rgb(219, 82, 18);
-    padding: 0 0 7px 0;
     transition: all 550ms;
     -webkit-transition: all 550ms;
     -moz-transition: all 550ms;
     -ms-transition: all 550ms;
     -o-transition: all 550ms;
 }
+
+.header-btn{
+    width: 100px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    background: var(--primary-color-lighter);
+}
+
+.header-btn a{
+    color: white;
+    transition: all 350ms ease;
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    -ms-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+}
+
+.header-btn:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.header-btn:hover a{
+    color: white;
+}
    
 header button a:hover{
-    border-bottom: none;
     color: black;
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+}
+
+#header-logo:hover{
+    color: black;
+    
 }
 
 #menu-open,
@@ -82,7 +165,7 @@ header button a:hover{
 
 footer{
     width: 100%;
-    height: 70px;
+    height: 60px;
     background: #1f446b;
     display: flex;
     align-items: center;
@@ -102,10 +185,11 @@ footer p{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 0 0 0 20px;
 }
 
 .socials i{
-    font-size: 2em;
+    font-size: 1.4em;
     color: white;
     margin: 0 10px 0 0;
 }
@@ -152,6 +236,11 @@ footer p{
         margin: 10px 0 0 0;
     }
 
+    #header-logo{
+        font-weight: 700;
+        font-size: 1em !important;
+    }
+
     #menu-open,
     #menu-close{    
         display: block !important;
@@ -181,8 +270,8 @@ footer p{
     }
 
     .navigation{
-        width: 200px;
-        height: 250px;
+        width: 70%;
+        height: fit-content;
         background: rgba(230, 227, 227, 0.418);
         border-radius: 10px;
         margin: 0 auto;
@@ -232,7 +321,8 @@ footer p{
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-        background: rgba(255,82,78,1);
+        background: var(--secondary-color);
+        margin: 0 0 10px 0;
     }
 
     /*Animation*/

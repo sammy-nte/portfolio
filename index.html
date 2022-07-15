@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/general.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="logo">SN<span class="logo-fullstop">.</span></div>
+        <div class="logo"><a id="header-logo" href="./index.html">SN<span class="logo-fullstop">.</a></span></div>
         <nav>
             <ul>
                 <!-- <li><a href="./index.html">HOME</a></li> -->
                 <li><a href="./about.html">ABOUT ME</a></li>
                 <!-- <li><a href="#">SERVICE</a></li> -->
                 <li><a href="./mywork.html">MY WORK</a></li>
-                <button><a href="mailto: sammyntewusu1@gmail.com">CONTACT</a></button>
+                <button class="header-btn"><a href="mailto: sammyntewusu1@gmail.com">CONTACT</a></button>
             </ul>
         </nav>
         <span class="material-icons" id="menu-open">menu</span>
@@ -30,7 +30,7 @@
         <div class="navigation">
             <nav>
                 <ul>
-                    <li><a href="#">HOME</a></li>
+                    <li class="home-link"><a href="#">HOME</a></li>
                     <li><a href="./about.html">ABOUT ME</a></li>
                     <!-- <li><a href="#">SERVICE</a></li> -->
                     <li><a href="./mywork.html">MY WORK</a></li>
@@ -51,8 +51,8 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolores laudantium sapiente consequatur quam, autem obcaecati hic, tenetur eum ducimus sequi ex excepturi corrupti. Itaque, quasi veritatis? Adipisci, beatae at.
             Ullam voluptates<p> -->
             <div class="buttons">
-                <button onclick="mywork()" class="mywork-btn">MY WORK</button>
-                <button onclick="hireMe()" class="hireme-btn" id="hireme_btn">HIRE ME</button>
+                <button onclick="myWork()" onmouseover="changeAboutMe()" class="mywork-btn" id="work">MY WORK</button>
+                <button onclick="aboutMe()" class="aboutme-btn" id="hireme_btn">ABOUT ME</button>
             </div>
         </div>
     
@@ -73,7 +73,7 @@
             <a href="https://www.linkedin.com/in/samuel-ntewusu-8b5b07215/"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="https://wa.me/+233204223551?"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-        <p>Samuel Ntewusu&copy;</p>
+        <p>Ntewusu&copy;</p>
     </footer>
     <script src="https://kit.fontawesome.com/d2a1321d7b.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>

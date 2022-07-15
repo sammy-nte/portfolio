@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Work</title>
     <link rel="stylesheet" href="./styles/mywork.css">
     <link rel="stylesheet" href="./styles/general.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="logo">SN<span class="logo-fullstop">.</span></div>
+        <div class="logo"><a id="header-logo" href="./index.html">SN<span class="logo-fullstop">.</a></span></div>
         <nav>
             <ul>
-                <!-- <li><a href="./index.html">HOME</a></li> -->
+                <li class="home-link"><a href="./index.html">HOME</a></li>
                 <li><a href="./about.html">ABOUT ME</a></li>
                 <!-- <li><a href="#">SERVICE</a></li> -->
                 <li><a href="./mywork.html">MY WORK</a></li>
-                <button><a href="mailto: sammyntewusu1@gmail.com">CONTACT</a></button>
+                <button class="header-btn"><a href="mailto: sammyntewusu1@gmail.com">CONTACT</a></button>
             </ul>
         </nav>
         <span class="material-icons" id="menu-open">menu</span>
@@ -41,65 +41,69 @@
         </div>
         <span class="typing"></span>
     </div>
-    <section id="real-world">
-        <h3 class="real-world__header">Real World Projects</h3>
-        <div id="real-world__projects">
-            <a href="#">
-                <div class="container" id="real-world__project1">
-                    <div class="content" id="content1">
-                        <p>Young Geeks</p>
-                    </div>
-                </div>
-            </a>
+    <h1>My Work</h1>
+    <section id="my-works">
+        <div class="my-works__container younggeeks">
+            <div class="my-works__container__left-side younggeeks__left-side" id="young-geeks-background">
+
+            </div>
+            <div class="my-works__container__right-side younggeeks__right-side" id="young-geeks-text">
+                <h3>Young Geeks</h3>
+                <p>After finishing my studies, I joined Young Geeks Technology and eventually became the lead designer and front-end developer for their official website.</p>
+                <a class="younggeeks-link" href="#_" onclick="siteupdate()"><i class="fa-brands fa-chrome"></i></a>
+                <div onclick="closeSiteUpdate()" id="warning-display"><p>This website is currently undergoing maintenance</p><span>(click/touch to close)</span></div>
+            </div>
+        </div>
+        <div class="my-works__container react-travel-journal">
+            <div class="my-works__container__left-side react-travel-journal__left-side" id="react-travel-journal-background">
+                <!-- <img src="./images/project-backgrounds/React-Journal/react-travel-journal.png" alt=""> -->
+            </div>
+            <div class="my-works__container__right-side react-travel-journal__right-side">
+                <h3>React Travel Journal</h3>
+                <p>
+                    React was used to create this app.
+                    It shows a list of places I've visited, and there's a local database called 'data.js' that contains vital information about the locations featured in the app.
+                    To properly run the app, data from 'data.js' is fetched and the necessary actions are taken.
+                    Credit to <a href="https://scrimba.com/" target="_blank">Scrimba</a> for this project. It was a solo project under their <a href="https://scrimba.com/learn/learnreact" target="_blank">Learn React</a> course
+                </p>
+                <a class="github-repo-link" href="https://github.com/sammy-nte/react-travel-journal" target="_blank"><i class="fa-brands fa-github github"></i></a>
+                <a class="github-pages-link" href="https://sammy-nte.github.io/react-travel-journal/" target="_blank"><i class="fa-brands fa-chrome github"></i></a>
+            </div>
+        </div>
+        <div class="my-works__container face-animation">
+            <div class="my-works__container__left-side face-animation__left-side" id="face-animation-background">
+
+            </div>
+            <div class="my-works__container__right-side face-animation__right-side" id="face-animation-text">
+                <p>
+                    This project makes extensive use of CSS animations and JavaScript.
+                    By making this project, I put my CSS animation skills to the test, and while it isn't visually appealing, I learned a lot from it.
+                    Users can change the colors of specific parts of the project to the given colors or a color of their choice with the help of some JavaScript implementations behind the scenes.
+                </p>
+                <a class="github-repo-link" href="https://github.com/sammy-nte/face-animation" target="_blank"><i class="fa-brands fa-github github"></i></a>
+                <a class="face-animation-link" href="./projects/face_animation/smily.html" target="_blank"><i class="fa-brands fa-chrome"></i></a>
+            </div>
+        </div>
+        <div class="my-works__container login-page-ui1">
+            <div class="my-works__container__left-side login-page-ui1__left-side" id="login-page-ui1-background">
+                <video id="login-page-ui-video" autoplay loop muted>
+                    <source src="./video-backgrounds/projects-video-backgrounds/Figma-UI/figma-ui.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="my-works__container__right-side login-page-ui1__right-side" id="login-page-text">
+                <p>
+                    This is a simple UI i designed for the students at Young Geeks Technology who where learning mobile app development.
+                </p>
+                <a class="figma-prototype-link" href="https://www.figma.com/proto/UYbeEyBGNbvHkyQFu39xtQ/ui?node-id=3%3A25&starting-point-node-id=3%3A24" target="_blank"><i class="fa-brands fa-figma figma-prototype"></i></i></a>
+                <a class="figma-file-link" href="https://www.figma.com/file/UYbeEyBGNbvHkyQFu39xtQ/ui?node-id=0%3A1" target="_blank"><i class="fa-brands fa-figma figma-ui"></i></i></a>
+            </div>
         </div>
     </section>
-    <section id="project-container">
-        <h3 class="personal-projects__header">Personal Projects</h3>
-        <section id="upper-section">
-            <a href="./projects/blog/index.html">
-                <div class="container" id="container1">
-                    <div class="content" id="content1">
-                        <p>Blog Template</p>
-                    </div>
-                </div>
-            </a>
-            <a href="./projects/electric/index.html" rel="noreferrer">
-                <div class="container" id="container2">
-                    <div class="content" id="content2">
-                        <p>Electrical Landing Page</p>
-                    </div>
-                </div>
-            </a>
-            <a href="./projects/face_animation/smily.html" target="_blank">
-                <div class="container" id="container3">
-                    <div class="content" id="content3">
-                        <p>Face Animation</p>
-                    </div>
-                </div>
-            </a>
-            <a href="./projects/game/index.html">
-                <div class="container" id="container4">
-                    <div class="content" id="content4">
-                        <p>City Animation</p>
-                    </div>
-                </div>
-            </a>
-            <a href="./projects/html-template/index.html">
-                <div class="container" id="container5">
-                    <div class="content" id="content1">
-                        <p>Service Company Landing Page</p>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="container" id="container6">
-                    <div class="content" id="content1">
-                        <p>Wild Life Reserve Template</p>
-                    </div>
-                </div>
-            </a>
-        </section>
-    </section>
+    <div class="viewmore">
+        <a class="github-repo-link" href="https://github.com/sammy-nte?tab=repositories" target="_blank"><i class="fa-brands fa-github repositories"></i></a>
+    </div>
+
+    
     <footer>
         <div class="socials">
             <a href="mailto: sammyntewusu1@gmail.com"><i class="fa-solid fa-envelope"></i></a>
@@ -107,7 +111,7 @@
             <a href="https://www.linkedin.com/in/samuel-ntewusu-8b5b07215/"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="https://wa.me/+233204223551?"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-        <p>Samuel Ntewusu&copy;</p>
+        <p>Ntewusu&copy;</p>
     </footer>
     <script src="https://kit.fontawesome.com/d2a1321d7b.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>

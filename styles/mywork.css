@@ -7,217 +7,245 @@
     /* outline: 1px solid lime; */
     font-family: 'Josefin Sans', sans-serif;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 header a{
     font-size: 1em !important;
 }
 
-#real-world{
+h1{
+    padding: 80px 0 0 0;
+}
+
+#my-works{
     width: 100%;
     height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-top: 20px;
 }
 
-#real-world__projects{
-    width: 100%;
-    height: fit-content;
-    margin: 20px 0 0 0;
-}
-
-.real-world__header,
-.personal-projects__header{
-    font-size: 1.7em;
-    margin: 0 0 0 20px;
-}
-
-#project-container{
-    width: 100%;
-    height: fit-content;
-    /* background: rgb(152, 212, 212); */
-    margin: 30px 0 50px 0;
-}
-
-#real-world__project1{
-    background: url("../images/young-geeks.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: rgb(212, 212, 212) !important;
-    box-shadow: -1px 1px 3px 3px rgba(233, 233, 233, 0.747);
-}
-
-#upper-section{
+.my-works__container{
     width: inherit;
     height: fit-content;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-#upper-section a,
-#real-world__projects a{
-    font-size: 2em;
-    text-decoration: none;
-    color: white;
-}
-
-.container{
-    height: 200px;
-    width: 300px;
-    background: teal;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    margin: 30px 10px 20px 10px !important;
-}
-
-#container6{
-    margin: 30px 0 0 0;
-}
-
-.content{
-    height: inherit;
-    width: inherit;
-    border-radius: inherit;
-    background: rgba(49, 49, 49, 0.505);
-    opacity: 70%;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    -webkit-border-radius: inherit;
-    -moz-border-radius: inherit;
-    -ms-border-radius: inherit;
-    -o-border-radius: inherit;
-    opacity: 0;
+    margin: 20px 0;
+    align-items: center;
 }
 
-@keyframes moveDown {
-    from{
-        height: 0%;
-        opacity: 0;
-    }
-
-    to{
-        height: 100%;
-        opacity: 1;
-    }
+.my-works__container__right-side{
+    width: 40%;
+    height: 300px;
+    display: grid;
+    place-content: center;
+    border: 1px solid rgba(214, 214, 214, 0.629);
+    line-height: 20px;
+    padding: 10px;
 }
 
-#container1,
-#container2,
-#container3,
-#container4,
-#container5,
-#container6{
-    background-color: rgb(212, 212, 212) !important;
+.my-works__container__right-side p{
+    height: fit-content;
 }
 
-
-#container1{
-    background: url("../images/blog-template.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.my-works__container__right-side h3{
+    padding: 0 0 10px 0;
 }
 
-#container2{
-    background: url("../images/electrical-template-image.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.my-works__container__left-side{
+    width: 500px;
+    height: 300px;
+    margin: 0 10px 0 0;
+    border: 1px solid rgba(214, 214, 214, 0.629);
+    overflow: hidden;
 }
 
-#container3{
-    background: url("../images/work.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: -1px 1px 3px 3px rgba(233, 233, 233, 0.747);
-}
-
-#container4{
-    background: url("../images/view.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#container5{
-    background: url("../images/service-company-landingpage-image.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#container6{
-    background: url("../images/wildlife.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-@media (hover:hover) and (pointer: fine){
-    .container:hover{
-        transform: scale(1.05);
-        -webkit-transform: scale(1.05);
-        -moz-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        -o-transform: scale(1.05);
-        transition: all 350ms linear;
-        -webkit-transition: all 350ms linear;
-        -moz-transition: all 350ms linear;
-        -ms-transition: all 350ms linear;
-        -o-transition: all 350ms linear;
-        cursor: pointer;
-    }
-    
-    .container:hover > .content{
-        animation: moveDown 350ms linear forwards;
-        -webkit-animation: moveDown 350ms linear forwards;
-    }
-}
-
-@media (hover: none) {
-    .content{
-        opacity: 1;
-    }
-}
-
-.socials a{
-    font-size: 1em !important;
+.github-repo-link,
+.github-pages-link,
+.younggeeks-link,
+.face-animation-link,
+.figma-prototype-link,
+.figma-file-link{
+    background: var(--secondary-color-lighter);
     color: white;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    transition: all 350ms ease;
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    -ms-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    margin: 10px 0 0 0;
 }
+
+.github-repo-link:hover,
+.github-pages-link:hover,
+.younggeeks-link:hover,
+.face-animation-link:hover,
+.figma-prototype-link:hover,
+.figma-file-link:hover{
+    background: var(--secondary-color);
+    cursor: pointer;
+}
+
+.fa-github{
+    overflow-y: hidden !important;
+}
+
+.github::after{
+    content: "View Project";
+    padding: 0 0 0 3px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.fa-chrome::after{
+    content: "View Site";
+    padding: 0 0 0 3px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.figma-prototype::after{
+    content: "View Prototype";
+    padding: 0 0 0 3px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.figma-ui::after{
+    content: "View File";
+    padding: 0 0 0 3px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.viewmore{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    place-content: center;
+    margin: 30px 0;
+}
+
+.repositories::after{
+    content: "View More Projects";
+    padding: 0 0 0 3px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#young-geeks-background{
+    background: url("../images/project-backgrounds/Younggeeks/younggeeks.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#warning-display{
+    height: fit-content;
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+    text-align: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    display: none;
+    position: relative;
+    cursor: pointer;
+}
+
+#warning-display p{
+    padding: 10px;
+}
+
+#warning-display span{
+    font-size: .8em;
+}
+
+#react-travel-journal-background{
+    background: url("../images/project-backgrounds/React-Journal/react-travel-journal.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+img{
+    width: inherit;
+    height: inherit;
+}
+
+#face-animation-background{
+    background: url("../images/project-backgrounds/Face-Animations/face-animation.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#login-page-ui1-background{
+    overflow: hidden;
+}
+
+#login-page-ui-video{
+    height: 100%;
+    width: 100%;
+}
+
+.react-travel-journal__right-side a:first-child,
+.react-travel-journal__right-side a:nth-child(2){
+    color: var(--link-color);
+}
+
 
 @media screen and (max-width: 880px) {
-    #real-world{
-        margin: 50px 0 0 0;
-    }
-
-    #real-world__projects{
-        display: flex;
-        justify-content: center;
-        margin: 0;
-    }
-
-    #upper-section{
-        /* flex-direction: column; */
-        justify-content: space-evenly;
+   .my-works__container{
+        flex-direction: column;
         align-items: center;
-        height: fit-content;
-        margin: -10px 0 0 0;
-        flex-wrap: wrap;
     }
 
-    .container{
-        width: 300px;
-        /* margin: 20px 0 0 0; */
-        /* margin: 3px 0 0 0; */
-    }  
+   .my-works__container__right-side{
+        height: fit-content;
+        width: 70%;
+    }
+
+   .my-works__container__left-side{
+        height: 300px !important;
+        width: 70%;
+        margin: 0 0 3px 0;
+        /* border: none; */
+    }
+
+    #young-geeks-background,
+    #react-travel-journal-background,
+    #face-animation-background{
+        background-size: 100% 100%;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+   .my-works__container__right-side{
+        width: 90%;
+        /* margin: 0; */
+   }
+
+   .my-works__container__left-side{
+        width: 90%;
+        /* border: none; */
+        /* height: 200px !important;
+        margin: 0; */
+   }   
+
+    /* #face-animation-background,
+    #young-geeks-background,
+    #react-travel-journal-background{
+        background-position: bottom;
+    } */
+
 }

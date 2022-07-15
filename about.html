@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="./styles/general.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="logo">SN<span class="logo-fullstop">.</span></div>
+        <div class="logo"><a id="header-logo" href="./index.html">SN<span class="logo-fullstop">.</a></span></div>
         <nav>
             <ul>
-                <li><a href="./index.html">HOME</a></li>
+                <li class="home-link"><a href="./index.html">HOME</a></li>
                 <li><a href="#">ABOUT ME</a></li>
                 <!-- <li><a href="#">SERVICE</a></li> -->
                 <li><a href="./mywork.html">MY WORK</a></li>
-                <button><a href="mailto: sammyntewusu1@gmail.com">CONTACT</a></button>
+                <button class="header-btn"><a href="mailto: sammyntewusu1@gmail.com">CONTACT</a></button>
             </ul>
         </nav>
         <span class="material-icons" id="menu-open">menu</span>
@@ -90,13 +90,44 @@
             </div>
             <div class="right-side" id="about-me">
                 <div class="text">
-                    <p>I'm a front-end web developer from Ghana. I enjoy building interatative web apps, from small scale to large scale websites.
-                        It's been a dream to become one of the best front-end developers out there and i aim at achieving that dream! Join me, let's make my dream and yours possible through web development!</p>
+                    <p>
+                        I'm a front-end web developer from Ghana. I enjoy creating interactive web apps, ranging from small to large-scale websites.
+                        It has always been a dream of mine to become one of the best front-end developers out there, and I intend to fulfill that dream! Join me in making my and your dreams a reality through web development!
+                    </p>
                 </div>
             </div>
         </section>
     </section>
-    
+    <div class="work-experience">
+        <h2>Work Experience</h2>
+        <div class="archivist">
+            <p>Archivist</p>
+            <p>I became an archivist for the <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiHzIbn2Pn4AhXK16QKHZFsBFcQFnoECAoQAQ&url=https%3A%2F%2Fias.ug.edu.gh%2Fcontent%2Fjh-kwabena-nketia-archives&usg=AOvVaw2ybQi7_CFVD-OwJVTquIz1">Insititute of African Studies, JH Kwabena Nketia Archives</a> for a period of time. I worked there as an intern, i was tasked with sorting out files and also digitizing some documents. I worked with technologies like Microsoft Excel, Microsoft Word among other cataloging and digitizing technologies</p>
+        </div>
+        <div class="web-development">
+            <p>Web Development Tutor and Front-End Web Developer for <a href="#_" onclick="siteupdate()">Young Geeks Technology</a></p>
+            <div onclick="closeSiteUpdate()" id="warning-display"><p>This website is currently undergoing maintenance</p><span>(click/touch to close)</span></div>
+            <p>
+                Young Geeks Technology expanded my knowledge in web development.
+                Following the completion of my studies, I was given the opportunity to work with the team.
+                I was hired as a web development tutor after joining their development team.
+                After some time working with them, I was given the opportunity to become the lead front-end developer for their official website.
+            </p>
+        </div>
+        <a id="resume-link" href="./files/Samuel-Ntewusu..pdf" download="Resume">My Resume</a>
+    </div>
+    <div class="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li><i class="fa-brands fa-html5"></i></li>
+            <li><i class="fa-brands fa-css3"></i></li>
+            <li><i class="fa-brands fa-react"></i></li>
+            <li><i class="fa-brands fa-sass"></i></li>
+            <li><i class="fa-brands fa-git-alt"></i></li>
+            <li><i class="fa-brands fa-figma"></i></li>
+            <li><i class="fa-brands fa-js"></i></li>
+        </ul>
+    </div>
     <span class="typing"></span>
     <footer>
         <div class="socials">
@@ -105,7 +136,7 @@
             <a href="https://www.linkedin.com/in/samuel-ntewusu-8b5b07215/"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="https://wa.me/+233204223551?"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-        <p>Samuel Ntewusu&copy;</p>
+        <p>Ntewusu&copy;</p>
     </footer>
     <script src="https://kit.fontawesome.com/d2a1321d7b.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>

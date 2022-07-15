@@ -6,7 +6,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
-    /* outline: 2px solid limegreen; */
+    box-sizing: border-box;
+}
+
+header{
+    position: relative !important;
 }
 
 .content{
@@ -15,18 +19,12 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0 0 100px 0;
 }
 
 /*ABOUT-PROFILE*/
 .about-profile{
-    /* background: rgba(128, 128, 128, 0.685); */
     width: 600px;
     height: 380px;
-    /* position: absolute;
-    left: 180px;
-    top: 100px; */
-    /* background: teal; */
     position: relative;
 }
 
@@ -62,7 +60,7 @@
 }
 
 .mywork-btn,
-.hireme-btn{
+.aboutme-btn{
     border: none;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -73,53 +71,34 @@
 }
 
 .mywork-btn{
-    background: rgba(255,82,78,1);
+    background: var(--primary-color);
     color: white;
 }
 
 .mywork-btn:hover{
-    background: none;
-    color: rgba(255,82,78,1);
-    transition: all 750ms;
-    -webkit-transition: all 750ms;
-    -moz-transition: all 750ms;
-    -ms-transition: all 750ms;
-    -o-transition: all 750ms;
     cursor: pointer;
-    border: 1px solid rgba(255,82,78,1);
+    border: 1px solid var(--primary-color);
 }
 
-.hireme-btn{
-    border: 1px solid rgba(255,82,78,1);
+.aboutme-btn{
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
     background: none;
-    color: rgba(255,82,78,1);
+    color: var(--primary-color);
 }
 
-.hireme-btn:hover{
-    background: rgb(255, 81, 78);
-    cursor: pointer;
-    color: white;
-    transition: all 750ms;
-    -webkit-transition: all 750ms;
-    -moz-transition: all 750ms;
-    -ms-transition: all 750ms;
-    -o-transition: all 750ms;
-}
 
 /*PICTURE SECTION*/
 .picture-section{
     width: 500px;
     height: 500px;
-    /* position: absolute;
-    right: 130px;
-    top: 100px; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .design1{
-    background: rgba(255,82,78,1);
+    background: var(--secondary-color);
     grid-area: 3 / 5 / 7 / 7;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -129,7 +108,7 @@
 }
 
 .design2{
-    background: yellow;
+    background: var(--secondary-color-lighter);
     grid-area: 1 / 2 / 5 / 4;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -178,11 +157,14 @@
         width: 400px;
         height: 400px;
     }
+
+    .content{
+        margin: 50px 0 0 0;
+    }
 }
 
 @media screen and (max-width: 880px) {
     .content{
-        /* background: teal; */
         display: flex;
         height: fit-content;
         margin: 50px 0 0 0;
@@ -193,8 +175,6 @@
         height: fit-content;
         animation: contentMovement 1.3s linear;
         -webkit-animation: contentMovement 1.3s linear;
-        /* background: teal; */
-        /* background-color: aqua; */
     }
 
     .about-profile .text{
@@ -209,11 +189,9 @@
         justify-content: center;
         animation: contentMovement 1.3s linear;
         -webkit-animation: contentMovement 1.3s linear;
-        /* margin-top: 50px; */
-        /* bottom: 20px; */
     }
 
-    .hireme-btn{
+    .aboutme-btn{
         margin: 0 0 0 10px;
     }
 
@@ -243,7 +221,7 @@
 
 @media screen and (max-width: 207px) {
     .bg{
-        display: none;
+        display: none !important;
     }
 }
 

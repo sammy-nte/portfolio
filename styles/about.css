@@ -5,7 +5,11 @@
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     overflow-x: hidden;
-    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
 }
 
 body{
@@ -22,7 +26,6 @@ body{
     align-items: center;
     flex-direction: column;
     margin: 0 0 50px 0;
-    /* background: teal; */
 }
 
 .greeting{
@@ -45,7 +48,6 @@ body{
 .about{
     width: 70%;
     height: 300px;
-    /* background: blue; */
     display: flex;
 }
 
@@ -56,7 +58,6 @@ body{
 }
 
 .left-side{
-    /* background: tan; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,12 +67,184 @@ body{
     display: flex;
     align-items: center;
     font-size: 1.3em;
+    text-align: justify !important;
+}
+
+.work-experience{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 30px 0;
+}
+
+.work-experience h3{
+    padding: 0 0 20px 0;
+}
+
+.web-development,
+.archivist{
+    width: 70%;
+    text-align: justify;
+    margin: 20px 0;
+    height: fit-content;
+    font-size: 1.3em;
+}
+
+.web-development p:first-child,
+.archivist p:first-child{
+    font-weight: bold;
+    padding: 0 0 10px 0;
+}
+
+.web-development p:first-child a,
+.archivist p:nth-child(2) a{
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+.archivist p:nth-child(2) a:visited{
+    text-decoration: underline;
+}
+
+.web-development p:nth-child(3),
+.archivist p:nth-child(2){
+    line-height: 20px;
+    overflow-y: hidden;
+}
+
+#resume-link{
+    background: var(--secondary-color-lighter);
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    display: grid;
+    place-content: center;
+    transition: all 350ms ease;
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    -ms-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    padding: 10px;
+}
+
+#resume-link:hover{
+    background: var(--secondary-color);
+    cursor: pointer;
+}
+
+.skills{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+
+.skills h3{
+    padding: 0 0 10px 0;
+}
+
+.skills-list{
+    width: 100%;
+    height: inherit;
+    margin: 0 auto;
+    overflow-y: hidden !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills li{
+    list-style: none;
+    padding: 20px;
+    height: fit-content;
+}
+
+.fa-html5,
+.fa-css3,
+.fa-react,
+.fa-sass,
+.fa-js,
+.fa-git-alt,
+.fa-figma{
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.5em;
+    color: var(--primary-color);
+    overflow-y: hidden !important;
+}
+
+.fa-html5::after{
+    content: "HTML";
+}
+
+.fa-css3::after{
+    content: "CSS";
+}
+
+.fa-react::after{
+    content: "REACT";
+}
+
+.fa-sass::after{
+    content: "SASS";
+}
+
+.fa-js::after{
+    content: "JAVASCRIPT";
+}
+
+.fa-git-alt::after{
+    content: "GIT";
+}
+
+.fa-figma::after{
+    content: "FIGMA";
+}
+
+.fa-html5::after,
+.fa-css3::after,
+.fa-react::after,
+.fa-sass::after,
+.fa-js::after,
+.fa-git-alt::after,
+.fa-figma::after{
+    padding: 0 0 0 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#warning-display{
+    height: fit-content;
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+    text-align: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    display: none;
+    position: relative;
+    cursor: pointer;
+}
+
+#warning-display p{
+    padding: 10px;
+}
+
+#warning-display span{
+    font-size: .8em;
 }
 
 @media screen and (max-width: 880px) {
     .greeting{
         height: fit-content;
-        /* background: yellow; */
         text-align: center;
         line-height: 63px;
         margin: 30px 0 50px 0;
@@ -106,6 +279,6 @@ body{
 
     .text{
         width: 90%;
-        text-align: center;
+        text-align: justify;
     }
 }
